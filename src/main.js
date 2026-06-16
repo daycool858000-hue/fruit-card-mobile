@@ -1,5 +1,3 @@
-import './styles.css';
-
 const STORAGE_KEY = 'ayi-fruit-card-v1';
 const FIELDS = [
   ['name', '水果名稱', '🍊 愛文芒果'],
