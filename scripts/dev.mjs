@@ -1,0 +1,2 @@
+import http from 'node:http';import fs from 'node:fs';import path from 'node:path';
+const root=process.cwd();const server=http.createServer((req,res)=>{let p=decodeURIComponent(req.url.split('?')[0]);if(p==='/' )p='/index.html';let file=path.join(root,p);fs.readFile(file,(e,d)=>{if(e){res.writeHead(404);res.end('Not found');return}res.end(d)})});server.listen(5173,()=>console.log('http://localhost:5173'));
