@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="阿怡水果報價">
+<title>阿怡水果報價｜手機版</title>
+<style>
+:root{--bg:#f4efe8;--card:#fffdfa;--ink:#2d2823;--muted:#7a7068;--line:#ded2c5;--brown:#8f5738;--brown2:#6c3c24;--cream:#eee3d7;--green:#dfe9dd;--warn:#fff1d5}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+body{padding-bottom:110px}
+.wrap{max-width:760px;margin:auto;padding:14px}
+h1{font-size:26px;margin:5px 0 3px}
+.sub{font-size:14px;color:var(--muted);margin-bottom:12px}
+.notice{background:#fff4d8;border:1px solid #e8cf91;border-radius:14px;padding:12px;margin-bottom:12px;font-size:14px;line-height:1.6}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px;margin-bottom:12px;box-shadow:0 8px 24px rgba(60,40,25,.06)}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tab{border:0;border-radius:13px;padding:14px 10px;background:var(--cream);font-size:17px;font-weight:900;color:var(--ink)}
+.tab.active{background:var(--brown);color:#fff}
+.search{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:17px;background:#fff;color:var(--ink)}
+.category{margin:14px 2px 7px;font-size:15px;font-weight:900;color:var(--brown2)}
+.product{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:10px}
+.product-title{padding:13px 14px;font-size:18px;font-weight:900;background:#faf5ee}
+.row{display:grid;grid-template-columns:52px 1fr 105px;grid-template-areas:"check spec price" "check grade price";gap:7px 9px;align-items:center;padding:12px;border-top:1px solid #eee4da}
+.check-wrap{grid-area:check;display:flex;align-items:center;justify-content:center}
+.check{appearance:none;-webkit-appearance:none;width:38px;height:38px;border:2px solid #bda998;border-radius:11px;background:#fff;position:relative}
+.check:checked{background:var(--brown);border-color:var(--brown)}
+.check:checked:after{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:white;font-size:27px;font-weight:900}
+.spec{grid-area:spec;font-size:17px;font-weight:900}
+.grade{grid-area:grade;width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;font-size:16px;background:white;color:var(--ink)}
+.money{grid-area:price;position:relative}
+.money input{width:100%;border:1px solid var(--line);border-radius:10px;padding:15px 31px 15px 10px;font-size:18px;background:var(--warn);color:var(--ink);text-align:right}
+.money span{position:absolute;right:9px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--muted)}
+.output{width:100%;min-height:220px;border:1px solid var(--line);border-radius:13px;padding:13px;font-size:16px;line-height:1.8;background:#fff;color:var(--ink);resize:vertical}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.btn{border:0;border-radius:12px;padding:13px;font-size:16px;font-weight:900;background:var(--cream);color:var(--ink)}
+.btn.primary{background:var(--brown);color:#fff}
+.btn.danger{background:#f2dddd;color:#97392f}
+.fixed{position:fixed;left:0;right:0;bottom:0;background:rgba(244,239,232,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
+.fixed-inner{max-width:760px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fixed .btn{padding:15px;font-size:17px}
+.status{min-height:22px;padding-top:7px;font-size:14px;font-weight:800;color:var(--brown2)}
+.empty{padding:30px;text-align:center;color:var(--muted)}
+@media (min-width:680px){.row{grid-template-columns:52px 1fr 140px 130px;grid-template-areas:"check spec grade price"}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>阿怡水果報價</h1>
+<div class="sub">固定品項與規格，只勾選、選等級、輸入價格。</div>
+
+<div class="notice">
+<strong>手機網頁版：</strong>直接勾選規格、選等級、輸入價格。資料會保存在這支手機的 Safari；按分享後選「加入主畫面」，之後可像 App 一樣使用。
+</div>
+
+<div class="card">
+  <div class="tabs">
+    <button class="tab active" id="tabDomestic" type="button">台產水果</button>
+    <button class="tab" id="tabImported" type="button">進口水果</button>
+  </div>
+</div>
+
+<div class="card">
+  <input class="search" id="search" type="search" placeholder="搜尋水果，例如：水蜜桃、芒果、櫻桃">
+  <div class="status" id="status"></div>
+</div>
+
+<div id="catalog"></div>
+
+<div class="card">
+  <label for="prefix"><strong>開頭文字</strong></label>
+  <input class="search" id="prefix" type="text" value="今日水果報價">
+  <div style="height:10px"></div>
+  <label for="output"><strong>產生結果</strong></label>
+  <textarea class="output" id="output" readonly></textarea>
+  <div style="height:10px"></div>
+  <div class="actions">
+    <button class="btn" id="clearPage" type="button">清除此頁</button>
+    <button class="btn danger" id="clearAll" type="button">全部清除</button>
+  </div>
+</div>
+</div>
+
+<div class="fixed">
+  <div class="fixed-inner">
+    <button class="btn" id="refresh" type="button">更新文字</button>
+    <button class="btn primary" id="copy" type="button">一鍵複製</button>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+var DATA = {"domestic": [{"category": "水蜜桃", "name": "梨山水蜜桃", "specs": ["20顆", "24顆", "30顆", "35顆"], "grades": ["特選", "上選", "一般"]}, {"category": "水蜜桃", "name": "拉拉山水蜜桃", "specs": ["20顆", "24顆", "30顆", "35顆"], "grades": ["特選", "上選", "一般"]}, {"category": "水蜜桃", "name": "福壽山水蜜桃", "specs": ["20顆", "24顆", "30顆", "35顆"], "grades": ["特選", "上選"]}, {"category": "梨子", "name": "卓蘭甘露梨", "specs": ["16兩", "18兩", "20兩"], "grades": ["特選", "上選", "一般"]}, {"category": "梨子", "name": "寶島甘露梨", "specs": ["16兩", "18兩", "20兩"], "grades": ["特選", "上選", "一般"]}, {"category": "梨子", "name": "新興梨", "specs": ["12兩", "14兩", "16兩", "18兩", "20兩"], "grades": ["特選", "上選", "一般"]}, {"category": "梨子", "name": "豐水梨", "specs": ["12兩", "14兩", "16兩", "18兩", "20兩"], "grades": ["特選", "上選", "一般"]}, {"category": "芒果", "name": "愛文芒果", "specs": ["6顆", "8顆", "10顆", "12顆", "14顆"], "grades": ["特選", "上選", "一般"]}, {"category": "芒果", "name": "金煌芒果", "specs": ["4顆", "5顆", "6顆", "7顆", "8顆"], "grades": ["特選", "上選", "一般"]}, {"category": "芒果", "name": "玉文芒果", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選"]}, {"category": "芒果", "name": "夏雪芒果", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選"]}, {"category": "芒果", "name": "烏香芒果", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選", "一般"]}, {"category": "葡萄", "name": "巨峰葡萄", "specs": ["5斤裝", "3斤裝", "2斤裝", "單盒"], "grades": ["特選", "上選", "一般"]}, {"category": "葡萄", "name": "蜜紅葡萄", "specs": ["5斤裝", "3斤裝", "2斤裝", "單盒"], "grades": ["特選", "上選"]}, {"category": "葡萄", "name": "台灣麝香葡萄", "specs": ["2公斤", "1公斤", "單房"], "grades": ["特選", "上選"]}, {"category": "荔枝", "name": "玉荷包荔枝", "specs": ["10斤", "5斤", "3斤"], "grades": ["特選", "上選", "一般"]}, {"category": "荔枝", "name": "黑葉荔枝", "specs": ["10斤", "5斤", "3斤"], "grades": ["特選", "上選", "一般"]}, {"category": "鳳梨", "name": "金鑽鳳梨", "specs": ["4顆", "5顆", "6顆", "7顆", "8顆"], "grades": ["特選", "上選", "一般"]}, {"category": "鳳梨", "name": "牛奶鳳梨", "specs": ["4顆", "5顆", "6顆"], "grades": ["特選", "上選"]}, {"category": "西瓜", "name": "大西瓜", "specs": ["單顆", "2顆"], "grades": ["特選", "上選"]}, {"category": "西瓜", "name": "無籽西瓜", "specs": ["單顆", "2顆"], "grades": ["特選", "上選"]}, {"category": "西瓜", "name": "小玉西瓜", "specs": ["4顆", "5顆", "6顆"], "grades": ["特選", "上選", "一般"]}, {"category": "香蕉", "name": "北蕉", "specs": ["整件", "半件", "單把"], "grades": ["特選", "上選", "一般"]}, {"category": "香蕉", "name": "寶島蕉", "specs": ["整件", "半件", "單把"], "grades": ["特選", "上選"]}, {"category": "木瓜", "name": "台農二號木瓜", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選", "一般"]}, {"category": "火龍果", "name": "紅肉火龍果", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選", "一般"]}, {"category": "火龍果", "name": "白肉火龍果", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選", "一般"]}, {"category": "柑橘", "name": "茂谷柑", "specs": ["5斤", "10斤", "20斤"], "grades": ["特選", "上選", "一般"]}, {"category": "柑橘", "name": "帝王柑", "specs": ["5斤", "10斤", "20斤"], "grades": ["特選", "上選", "一般"]}, {"category": "柑橘", "name": "海梨柑", "specs": ["5斤", "10斤", "20斤"], "grades": ["特選", "上選", "一般"]}, {"category": "柑橘", "name": "桶柑", "specs": ["5斤", "10斤", "20斤"], "grades": ["特選", "上選", "一般"]}, {"category": "柑橘", "name": "柳丁", "specs": ["5斤", "10斤", "20斤"], "grades": ["特選", "上選", "一般"]}, {"category": "芭樂", "name": "珍珠芭樂", "specs": ["5斤", "10斤", "20斤"], "grades": ["特選", "上選", "一般"]}, {"category": "芭樂", "name": "紅心芭樂", "specs": ["5斤", "10斤"], "grades": ["特選", "上選"]}, {"category": "釋迦", "name": "大目釋迦", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選", "一般"]}, {"category": "釋迦", "name": "鳳梨釋迦", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選", "一般"]}, {"category": "蓮霧", "name": "屏東蓮霧", "specs": ["12顆", "15顆", "18顆", "20顆"], "grades": ["特選", "上選", "一般"]}, {"category": "柚子", "name": "麻豆文旦", "specs": ["6顆", "8顆", "10顆", "12顆"], "grades": ["特選", "上選", "一般"]}, {"category": "棗子", "name": "高雄蜜棗", "specs": ["20顆", "24顆", "30顆", "36顆"], "grades": ["特選", "上選", "一般"]}, {"category": "草莓", "name": "大湖草莓", "specs": ["1號", "2號", "3號", "單盒"], "grades": ["特選", "上選"]}, {"category": "柿子", "name": "甜柿", "specs": ["20顆", "24顆", "28顆", "32顆"], "grades": ["特選", "上選", "一般"]}], "imported": [{"category": "蘋果", "name": "日本青森富士蘋果", "specs": ["28顆", "32顆", "36顆", "40顆", "46顆"], "grades": ["特選", "上選"]}, {"category": "蘋果", "name": "日本王林蘋果", "specs": ["28顆", "32顆", "36顆", "40顆"], "grades": ["特選", "上選"]}, {"category": "蘋果", "name": "紐西蘭愛妃蘋果", "specs": ["18顆", "20顆", "22顆", "24顆", "28顆"], "grades": ["特選", "上選"]}, {"category": "蘋果", "name": "紐西蘭富士蘋果", "specs": ["22顆", "24顆", "28顆", "30顆", "32顆"], "grades": ["特選", "上選"]}, {"category": "蘋果", "name": "美國富士蘋果", "specs": ["56顆", "64顆", "72顆", "80顆", "88顆"], "grades": ["特選", "上選"]}, {"category": "梨子", "name": "韓國新高梨", "specs": ["10顆", "12顆", "14顆", "16顆", "18顆"], "grades": ["特選", "上選"]}, {"category": "梨子", "name": "日本新高梨", "specs": ["8顆", "10顆", "12顆", "14顆"], "grades": ["特選", "上選"]}, {"category": "水蜜桃", "name": "日本水蜜桃", "specs": ["5玉", "6玉", "7玉", "8玉", "9玉", "10玉", "12玉"], "grades": ["特秀", "秀", "優"]}, {"category": "水蜜桃", "name": "美國水蜜桃", "specs": ["36顆", "40顆", "44顆", "48顆"], "grades": ["特選", "上選"]}, {"category": "油桃", "name": "美國油桃", "specs": ["36顆", "40顆", "44顆", "48顆"], "grades": ["特選", "上選"]}, {"category": "櫻桃", "name": "美國華盛頓櫻桃", "specs": ["9R", "9.5R", "10R", "10.5R", "11R"], "grades": ["特選", "上選"]}, {"category": "櫻桃", "name": "智利櫻桃", "specs": ["2J", "2.5J", "3J", "3.5J", "4J"], "grades": ["特選", "上選"]}, {"category": "櫻桃", "name": "紐西蘭櫻桃", "specs": ["26mm", "28mm", "30mm", "32mm"], "grades": ["特選", "上選"]}, {"category": "葡萄", "name": "美國秋脆葡萄", "specs": ["整箱", "半箱", "單袋"], "grades": ["L", "XL", "Jumbo"]}, {"category": "葡萄", "name": "秘魯秋脆葡萄", "specs": ["整箱", "半箱", "單袋"], "grades": ["L", "XL", "Jumbo"]}, {"category": "葡萄", "name": "澳洲無籽葡萄", "specs": ["整箱", "半箱", "單袋"], "grades": ["L", "XL", "Jumbo"]}, {"category": "葡萄", "name": "日本麝香葡萄", "specs": ["5房", "6房", "7房", "8房", "單房"], "grades": ["赤秀", "青秀", "優"]}, {"category": "藍莓", "name": "進口藍莓", "specs": ["125克", "170克", "12盒", "24盒"], "grades": ["大果", "中果"]}, {"category": "柑橘", "name": "美國甜橙", "specs": ["48顆", "56顆", "72顆", "88顆", "113顆"], "grades": ["特選", "上選"]}, {"category": "柑橘", "name": "澳洲甜橙", "specs": ["40顆", "48顆", "56顆", "72顆", "88顆"], "grades": ["特選", "上選"]}, {"category": "柑橘", "name": "南非甜橙", "specs": ["48顆", "56顆", "72顆", "88顆"], "grades": ["特選", "上選"]}, {"category": "柑橘", "name": "日本蜜柑", "specs": ["S", "M", "L", "2L"], "grades": ["秀", "優"]}, {"category": "奇異果", "name": "紐西蘭黃金奇異果", "specs": ["22顆", "25顆", "27顆", "30顆", "33顆"], "grades": ["特選", "上選"]}, {"category": "奇異果", "name": "紐西蘭綠奇異果", "specs": ["25顆", "27顆", "30顆", "33顆", "36顆"], "grades": ["特選", "上選"]}, {"category": "榴槤", "name": "泰國金枕頭榴槤", "specs": ["整件", "單顆", "每公斤"], "grades": ["A果", "B果"]}, {"category": "榴槤", "name": "馬來西亞貓山王榴槤", "specs": ["整件", "單顆", "每公斤"], "grades": ["A果", "B果"]}, {"category": "酪梨", "name": "紐西蘭酪梨", "specs": ["20顆", "23顆", "25顆", "30顆"], "grades": ["大果", "中果"]}, {"category": "酪梨", "name": "墨西哥酪梨", "specs": ["48顆", "60顆", "70顆", "84顆"], "grades": ["大果", "中果"]}, {"category": "鳳梨", "name": "菲律賓鳳梨", "specs": ["5顆", "6顆", "7顆", "8顆"], "grades": ["特選", "上選"]}, {"category": "椰子", "name": "泰國香水椰子", "specs": ["9顆", "12顆", "單顆"], "grades": ["特選", "上選"]}, {"category": "石榴", "name": "進口石榴", "specs": ["8顆", "10顆", "12顆", "14顆"], "grades": ["特選", "上選"]}]};
+var current = "domestic";
+var storageKey = "ayi_mobile_fruit_v4";
+var prefixKey = "ayi_mobile_prefix_v4";
+var state = {};
+
+try {
+  var saved = localStorage.getItem(storageKey);
+  if (saved) state = JSON.parse(saved) || {};
+} catch(e) {}
+
+var catalog = document.getElementById("catalog");
+var output = document.getElementById("output");
+var search = document.getElementById("search");
+var prefix = document.getElementById("prefix");
+var status = document.getElementById("status");
+var tabDomestic = document.getElementById("tabDomestic");
+var tabImported = document.getElementById("tabImported");
+
+try {
+  var savedPrefix = localStorage.getItem(prefixKey);
+  if (savedPrefix !== null) prefix.value = savedPrefix;
+} catch(e) {}
+
+function esc(s) {
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function key(type,name,spec) {
+  return type + "||" + name + "||" + spec;
+}
+
+function getItem(type,item,spec) {
+  var k = key(type,item.name,spec);
+  if (!state[k]) state[k] = {checked:false,grade:item.grades[0],price:""};
+  return state[k];
+}
+
+function save() {
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(state));
+    localStorage.setItem(prefixKey, prefix.value);
+  } catch(e) {}
+}
+
+function flash(msg) {
+  status.textContent = msg;
+  window.clearTimeout(window._ayiTimer);
+  window._ayiTimer = window.setTimeout(function(){status.textContent="";},1800);
+}
+
+function render() {
+  var q = (search.value || "").trim().toLowerCase();
+  var list = DATA[current];
+  var html = "";
+  var lastCat = "";
+  var found = 0;
+
+  for (var i=0;i<list.length;i++) {
+    var item = list[i];
+    if (q && item.name.toLowerCase().indexOf(q) === -1 && item.category.toLowerCase().indexOf(q) === -1) continue;
+    found++;
+    if (item.category !== lastCat) {
+      html += '<div class="category">' + esc(item.category) + '</div>';
+      lastCat = item.category;
+    }
+    html += '<div class="product"><div class="product-title">' + esc(item.name) + '</div>';
+    for (var j=0;j<item.specs.length;j++) {
+      var spec = item.specs[j];
+      var s = getItem(current,item,spec);
+      html += '<div class="row" data-k="' + esc(key(current,item.name,spec)) + '">' +
+        '<div class="check-wrap"><input class="check" type="checkbox"' + (s.checked ? ' checked' : '') + '></div>' +
+        '<div class="spec">' + esc(spec) + '</div>' +
+        '<select class="grade">';
+      for (var g=0;g<item.grades.length;g++) {
+        html += '<option' + (s.grade === item.grades[g] ? ' selected' : '') + '>' + esc(item.grades[g]) + '</option>';
+      }
+      html += '</select>' +
+        '<div class="money"><input class="price" type="number" inputmode="numeric" pattern="[0-9]*" min="0" placeholder="價格" value="' + esc(s.price) + '"><span>元</span></div>' +
+        '</div>';
+    }
+    html += '</div>';
+  }
+
+  catalog.innerHTML = found ? html : '<div class="card empty">找不到符合的水果</div>';
+  bindRows();
+}
+
+function bindRows() {
+  var rows = catalog.querySelectorAll(".row");
+  for (var i=0;i<rows.length;i++) {
+    (function(row){
+      var k = row.getAttribute("data-k");
+      var check = row.querySelector(".check");
+      var grade = row.querySelector(".grade");
+      var price = row.querySelector(".price");
+
+      check.addEventListener("change", function(){
+        state[k].checked = check.checked;
+        save();
+        generate();
+      });
+
+      grade.addEventListener("change", function(){
+        state[k].grade = grade.value;
+        save();
+        generate();
+      });
+
+      price.addEventListener("input", function(){
+        state[k].price = price.value;
+        if (price.value !== "" && !check.checked) {
+          check.checked = true;
+          state[k].checked = true;
+        }
+        save();
+        generate();
+      });
+    })(rows[i]);
+  }
+}
+
+function generate() {
+  var sections = [];
+  var types = ["domestic","imported"];
+  for (var t=0;t<types.length;t++) {
+    var type = types[t];
+    var lines = [];
+    var list = DATA[type];
+    for (var i=0;i<list.length;i++) {
+      var item = list[i];
+      for (var j=0;j<item.specs.length;j++) {
+        var spec = item.specs[j];
+        var s = getItem(type,item,spec);
+        if (s.checked && s.price !== "") {
+          lines.push(item.name + "｜" + s.grade + "｜" + spec + "｜" + s.price + "元");
+        }
+      }
+    }
+    if (lines.length) {
+      sections.push((type === "domestic" ? "【台產水果】" : "【進口水果】") + "\n" + lines.join("\n"));
+    }
+  }
+  var p = (prefix.value || "").trim();
+  output.value = (p ? p + (sections.length ? "\n\n" : "") : "") + sections.join("\n\n");
+  save();
+}
+
+function switchType(type) {
+  current = type;
+  tabDomestic.className = "tab" + (type === "domestic" ? " active" : "");
+  tabImported.className = "tab" + (type === "imported" ? " active" : "");
+  render();
+}
+
+tabDomestic.addEventListener("click", function(){switchType("domestic");});
+tabImported.addEventListener("click", function(){switchType("imported");});
+search.addEventListener("input", render);
+prefix.addEventListener("input", generate);
+
+document.getElementById("refresh").addEventListener("click", function(){generate();flash("文字已更新");});
+
+document.getElementById("copy").addEventListener("click", function(){
+  generate();
+  if (!output.value.trim()) {flash("請先勾選品項並輸入價格");return;}
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(output.value).then(function(){flash("已複製");}, fallbackCopy);
+  } else {
+    fallbackCopy();
+  }
+});
+
+function fallbackCopy() {
+  output.removeAttribute("readonly");
+  output.focus();
+  output.select();
+  try {document.execCommand("copy");flash("已複製");} catch(e) {flash("請長按文字後複製");}
+  output.setAttribute("readonly","readonly");
+}
+
+document.getElementById("clearPage").addEventListener("click", function(){
+  var list = DATA[current];
+  for (var i=0;i<list.length;i++) {
+    for (var j=0;j<list[i].specs.length;j++) {
+      var k = key(current,list[i].name,list[i].specs[j]);
+      state[k] = {checked:false,grade:list[i].grades[0],price:""};
+    }
+  }
+  save();render();generate();flash("此頁已清除");
+});
+
+document.getElementById("clearAll").addEventListener("click", function(){
+  state = {};
+  save();render();generate();flash("全部已清除");
+});
+
+render();
+generate();
+})();
+</script>
+</body>
+</html>
