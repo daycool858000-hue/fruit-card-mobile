@@ -1,0 +1,2174 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4eee4">
+  <meta name="description" content="你今天的味道。一間用真實香材、情緒與記憶調製虛擬香水的工作室。">
+  <title>你今天的味道｜虛擬香水調製所</title>
+  <style>
+:root{--cream:#f4eee4;--paper:#fffdf8;--sand:#e6dac8;--ink:#3b312e;--muted:#8c8176;--wine:#623d46;--wine-dark:#4c2932;--olive:#5d6752;--brass:#b49a6e;--line:#ded4c6;--scene:#ebe0d4;--liquid:#b88480;--liquid-light:#e7b9ad;--glow:rgba(191,124,96,.24);font-family:Arial,"PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--cream);font-synthesis:none}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;overscroll-behavior:none}body{height:100dvh;overflow:hidden}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a37c75;outline-offset:3px}button:disabled{opacity:.45;cursor:not-allowed}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Georgia,"Noto Serif TC","Songti TC",serif;font-weight:500}.grain{position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.91' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.38' filter='url(%23n)'/%3E%3C/svg%3E")}.topbar{height:75px;padding:0 clamp(18px,3.2vw,54px);display:flex;align-items:center;justify-content:space-between;background:rgba(250,246,238,.94);border-bottom:1px solid var(--line);position:relative;z-index:12;gap:18px}.brand{padding:0;display:flex;align-items:center;gap:11px;border:0;background:transparent;text-align:left;flex-shrink:0;color:var(--wine)}.brand-mark{font-size:38px;font-weight:400;color:var(--brass);line-height:1}.brand-title{font-family:Georgia,"Noto Serif TC","Songti TC",serif;font-size:20px;letter-spacing:.15em;line-height:1.3;white-space:nowrap}.brand-title small{display:block;font-family:Arial,sans-serif;font-size:8px;letter-spacing:.28em;color:var(--muted);margin-top:5px}.steps{display:flex;align-items:center;gap:13px}.step{color:#a6a098;border:0;background:none;display:flex;align-items:center;gap:7px;padding:9px 5px;font-size:12px;letter-spacing:.1em;white-space:nowrap}.step>span:first-child{font-family:Georgia,serif;font-style:italic;font-size:17px}.step.active{color:var(--wine);font-weight:700}.step-line{width:38px;height:1px;background:#c7b9aa}.saved-trigger{display:flex;gap:8px;align-items:center;padding:10px 12px;border:1px solid var(--line);background:none;color:var(--ink);border-radius:2px;white-space:nowrap;font-size:12px}.saved-symbol{font-size:17px}.saved-count{border-radius:100px;background:#e7d9cb;min-width:17px;height:17px;display:grid;place-items:center;font-size:10px}main{height:calc(100dvh - 75px);overflow:hidden}.studio{display:grid;grid-template-columns:minmax(440px,1fr) minmax(420px,.95fr);gap:0;height:100%;min-height:0}.panel{min-height:0}.library{display:flex;flex-direction:column;border-right:1px solid var(--line);background:var(--paper);min-width:0}.library-head{padding:clamp(20px,2.5vw,38px) clamp(20px,3.2vw,54px) 15px;flex:0 0 auto;background:var(--paper)}.eyebrow,.stage-kicker,.sidebar-label,.result-serial,.text-index{font-size:10px;letter-spacing:.22em;font-weight:700;color:#99826b}.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin:21px 0 24px}.section-head h1{font-size:clamp(27px,2.7vw,38px);letter-spacing:.035em;margin-bottom:10px}.section-head p,.stage-title-row p{color:var(--muted);font-size:13px;line-height:1.8;margin:0}.tiny-stamp{font-family:Georgia,serif;color:var(--brass);line-height:1.2;font-size:12px;text-align:center;border:1px solid #dfd1bb;padding:11px;border-radius:50%;transform:rotate(9deg);white-space:nowrap}.search-wrap{height:47px;display:flex;align-items:center;gap:12px;padding:0 15px;border:1px solid #d9d0c6;background:#f8f4ee}.search-wrap>span{font-size:25px;color:#887668;line-height:1}.search-wrap input{width:100%;font-size:13px;flex:1;min-width:0;outline:0;border:0;background:transparent;color:var(--ink)}.search-wrap input:focus{outline:0}.search-wrap:focus-within{border-color:var(--wine)}.search-wrap input::placeholder{color:#a6a09a}.search-wrap kbd{border:0;color:#7c6a63;background:transparent;cursor:pointer;font-size:24px}.filter-scroll{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;margin-top:15px;padding-bottom:4px}.filter-scroll::-webkit-scrollbar{display:none}.filter{flex-shrink:0;border:1px solid #ddd3c8;color:#786d63;background:transparent;padding:9px 13px;font-size:12px;white-space:nowrap;transition:background .15s,color .15s}.filter.active{background:var(--wine);border-color:var(--wine);color:#fff}.filter-meta{display:flex;align-items:center;justify-content:space-between;margin-top:12px;font-size:11px;color:var(--muted)}.quiet-link{padding:6px 0;color:var(--wine);background:transparent;border:none;font-size:12px;text-decoration:underline;text-underline-offset:4px}.ingredient-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:14px clamp(20px,3.2vw,54px) 30px;scrollbar-color:#cdbbaa transparent}.ingredient-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.ingredient-card{position:relative;border:1px solid #e6dbd0;background:#fcfaf6;padding:15px 16px;min-width:0;min-height:126px;display:flex;flex-direction:column;align-items:stretch;text-align:left;transition:border-color .15s,background .15s,box-shadow .15s}.ingredient-card:hover{border-color:#b89b88;background:#fff}.ingredient-card.active{background:#f3e7e4;border-color:#976873;box-shadow:inset 0 0 0 1px rgba(113,66,77,.12)}.ingredient-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:4px}.ingredient-type{font-size:10px;color:#957e73;letter-spacing:.04em;line-height:1.4}.ingredient-action{width:24px;height:24px;border-radius:50%;border:1px solid #cbbab0;display:grid;place-items:center;color:var(--wine);font-size:19px;flex-shrink:0;line-height:1}.ingredient-card.active .ingredient-action{background:var(--wine);color:#fff;border-color:var(--wine)}.ingredient-name{font-family:Georgia,"Noto Serif TC",serif;font-size:19px;letter-spacing:.04em;line-height:1.35;margin:2px 0 8px}.ingredient-desc{font-size:11px;color:#7c736c;line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.ingredient-footer{display:flex;justify-content:space-between;gap:8px;margin-top:auto;padding-top:11px;color:#ad9a8c;font-size:10px;letter-spacing:.08em}.ingredient-footer span:last-child{font-style:italic}.library-bottom-note{font-family:Georgia,"Noto Serif TC",serif;text-align:center;color:#b1a69a;font-size:13px;padding:20px 0 0}.no-results{grid-column:1/-1;text-align:center;color:var(--muted);font-size:13px;padding:45px 10px;line-height:2}
+.preview{display:flex;flex-direction:column;padding:24px clamp(18px,3vw,46px) 24px;background:radial-gradient(ellipse at 75% 15%,#fff9ed 0,transparent 51%),#eee6da;overflow-y:auto;position:relative;min-width:0}.preview-top{display:flex;align-items:center;justify-content:space-between;flex-shrink:0}.live-dot{display:inline-block;width:6px;height:6px;background:#9c9e77;border-radius:50%;box-shadow:0 0 0 4px #c7ccba88;vertical-align:middle;margin-left:7px}.preview-counter{display:flex;align-items:baseline;gap:5px;color:#8d7a68}.preview-counter b{font-family:Georgia,serif;font-size:27px;font-weight:400}.preview-counter small{font-size:11px}.vessel-scene{flex:0 0 auto;height:min(42vh,390px);position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;overflow:hidden}.scene-halo{position:absolute;pointer-events:none;border:1px solid rgba(139,102,112,.16);border-radius:50%;width:310px;height:310px;transform:rotate(-22deg)}.halo-two{width:250px;height:250px;border-style:dashed;opacity:.5;animation:orbit 50s linear infinite}.scene-halo:before{content:'✳';position:absolute;color:#bcaa91;font-size:17px;top:28px;left:21px}.scene-dust{position:absolute;inset:0;pointer-events:none}.particle{position:absolute;left:50%;top:50%;height:6px;width:6px;border-radius:50%;background:#b49a6e;box-shadow:0 0 13px currentColor;opacity:0;animation:particlePop 1150ms ease-out forwards;z-index:3}.orbit-text{position:absolute;font-size:9px;letter-spacing:.21em;color:#ac9785;white-space:nowrap}.orbit-text-top{left:0;top:40%}.orbit-text-bottom{right:0;bottom:25%}.live-bottle{position:relative;width:158px;height:270px;filter:drop-shadow(0 18px 16px #755a4a33);z-index:2;animation:floatBottle 5s ease-in-out infinite;flex-shrink:0}.bottle-lid{height:33px;position:absolute;top:0;left:55px;width:48px;border-radius:4px 4px 2px 2px;background:linear-gradient(90deg,#6c4a3c,#bfa47f 30%,#e4cbaa 43%,#aa8768 79%,#695347);border:1px solid #9d806a;box-shadow:inset 0 3px 4px #f9e9cd99,0 2px 5px #4a322622;z-index:4}.bottle-neck{position:absolute;width:38px;height:43px;top:29px;left:60px;background:linear-gradient(90deg,#9d87936b,#ffffff8c 28%,#c4a9a866 65%,#97837777);border:1px solid #bfa7a4;z-index:2}.bottle-glass{position:absolute;width:158px;height:205px;top:64px;left:0;overflow:hidden;border-radius:27px 27px 19px 19px;border:2px solid #ffffffd1;background:linear-gradient(106deg,#fffefa7a 6%,#fffcf733 18%,#f7ece13b 50%,#b9a7a43d 94%);box-shadow:inset 6px 0 15px #ffffffcc,inset -10px 0 15px #785a5c22,inset 0 -5px 7px #9c7e7b44,0 0 36px var(--glow)}.bottle-liquid{position:absolute;bottom:0;left:0;width:100%;height:8%;background:linear-gradient(100deg,var(--liquid) 0%,var(--liquid-light) 38%,var(--liquid) 100%);transition:height .55s cubic-bezier(.2,.65,.25,1),background .7s;box-shadow:inset 7px 0 11px #fff7,inset -9px 0 16px #492d3740,0 0 22px var(--glow)}.bottle-liquid:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#4b29411a,transparent 50%);pointer-events:none}.liquid-ripple{position:absolute;top:-5px;left:-3%;width:106%;height:14px;border-radius:50%;background:linear-gradient(90deg,var(--liquid),var(--liquid-light) 45%,var(--liquid));opacity:.8;animation:wave 2s ease-in-out infinite}.bubbles{position:absolute;inset:0}.bubble{position:absolute;bottom:-8px;width:4px;height:4px;border-radius:50%;border:1px solid #ffffffbc;background:#ffffff44;animation:bubbleUp 3s linear infinite}.bottle-shine{position:absolute;top:15px;bottom:15px;left:12px;width:14px;border-radius:50%;background:linear-gradient(#fff9,transparent 65%);filter:blur(4px);z-index:3;pointer-events:none}.bottle-label{position:absolute;z-index:3;top:69px;left:25px;right:25px;min-height:64px;background:#fffbf0d9;border:1px solid #e3d4becc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;text-align:center;padding:8px 2px;box-shadow:0 2px 9px #79615c21}.bottle-label span{font-family:Georgia,"Noto Serif TC",serif;font-size:10px;color:#725657;letter-spacing:.15em}.bottle-label b{font-size:11px;font-weight:400;color:#4f3b38;line-height:1.25}.bottle-label small{font-size:6px;letter-spacing:.18em;color:#a58c7e}.scene-footer{position:absolute;bottom:7px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px;color:#8a766f;white-space:nowrap;font-family:Georgia,"Noto Serif TC",serif;font-size:12px}.scene-swatch{width:12px;height:12px;border-radius:50%;border:2px solid #fff7;box-shadow:0 0 0 1px #ab968f;background:var(--liquid)}.preview-detail{flex:1;display:flex;flex-direction:column;min-height:0;max-width:590px;width:100%;align-self:center}.preview-heading{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d3c5b7;padding-bottom:12px}.preview-heading h2{margin:0;font-size:20px;letter-spacing:.02em}.preview-heading>span{font-size:11px;color:var(--muted)}.note-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}.note-mini{background:#ffffff91;border:1px solid #e6d8ca;padding:12px;min-width:0}.note-mini span{font-size:9px;letter-spacing:.16em;color:#9b8776;display:block}.note-mini strong{font-family:Georgia,"Noto Serif TC",serif;font-size:12px;font-weight:400;color:var(--wine);display:block;margin-top:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.chosen-block{flex:1;min-height:55px}.chosen-title{display:flex;justify-content:space-between;font-size:12px;color:#7c685f;margin-bottom:10px}.chosen-list{display:flex;gap:7px;flex-wrap:wrap;max-height:90px;overflow-y:auto}.chosen-chip{display:flex;align-items:center;gap:5px;border:1px solid #d5b9ad;background:#fff9f2ad;font-size:11px;padding:5px 7px;color:#6d4c50}.chosen-chip button{border:0;background:none;color:#8d6d6a;font-size:15px;line-height:1}.empty-chosen{color:#a69488;font-size:11px}.preview-actions{margin-top:16px}.solid-btn{width:100%;min-height:48px;background:var(--wine);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:15px;border:1px solid var(--wine);padding:13px 20px;font-size:13px;letter-spacing:.06em;transition:background .15s}.solid-btn:hover{background:var(--wine-dark)}.solid-btn>span{font-size:19px}.mobile-preview-foot{display:none}
+.stage-page{height:100%;overflow:auto;background:var(--cream);padding:clamp(24px,4vw,60px);scrollbar-color:#ccbba7 transparent}.stage-page-inner,.result-inner{max-width:1320px;margin:0 auto}.stage-title-row{display:flex;justify-content:space-between;align-items:end;gap:25px;margin:19px 0 35px}.stage-title-row h1{font-size:clamp(28px,3.2vw,45px);line-height:1.3;margin-bottom:12px}.stage-title-row p{max-width:650px}.outline-btn{background:transparent;border:1px solid #c8b9a6;padding:12px 16px;min-height:43px;color:var(--wine);font-size:12px;white-space:nowrap}.outline-btn:hover{background:#eae0d3}.vessels-layout{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:28px;align-items:start}.vessel-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.vessel-card{border:1px solid #dfd1c1;background:#fcf9f2;min-height:190px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:13px;padding:15px 6px;position:relative}.vessel-card:hover{border-color:#aa8c76}.vessel-card.active{background:#f5e9e2;border:2px solid #926675;padding:14px 5px}.vessel-svg{width:102px;height:115px;display:grid;place-items:center}.vessel-svg svg{width:100%;height:100%}.vessel-card .vessel-name{font-family:Georgia,"Noto Serif TC",serif;font-size:15px}.vessel-card .vessel-num{position:absolute;top:11px;right:12px;background:var(--wine);color:white;font-size:9px;min-width:18px;height:18px;border-radius:50%;display:grid;place-items:center}.vessel-sidebar{position:sticky;top:0;background:#fffaf2;border:1px solid #ded0c1;padding:25px;min-height:370px}.vessel-sidebar h2{font-size:25px;margin:9px 0 17px}.picked-vessels{display:flex;flex-direction:column;gap:14px}.picked-vessel{border-bottom:1px solid #e6d9cb;padding-bottom:13px}.picked-vessel-name{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}.picked-vessel-name button{border:0;background:none;color:var(--wine);font-size:16px}.picked-vessel select{margin-top:9px;width:100%;padding:9px 10px;border:1px solid #d8c9ba;background:#fff;color:#654b47;font-size:12px}.side-divider{height:1px;background:#e1d3c4;margin:21px 0 14px}.aside-info{font-size:11px;line-height:1.8;color:#8b7b6e}.vessel-sidebar .solid-btn{margin-top:20px}.sidebar-empty{font-size:12px;color:var(--muted);line-height:1.8}
+.result-page{background:linear-gradient(135deg,#f7f0e7,#f3ebe0)}.result-inner{max-width:1090px}.result-topline{display:flex;justify-content:space-between;align-items:center;gap:10px}.result-hero{display:grid;grid-template-columns:1.2fr .8fr;min-height:330px;gap:30px;margin:34px 0 28px;background:#fffbf5;border:1px solid #ded0bf;padding:clamp(22px,3.6vw,50px)}.result-intro{min-width:0}.result-serial{display:block;color:var(--brass);margin-bottom:27px}.name-label,.subtitle-label{display:block;font-size:11px;color:#8d7d70;letter-spacing:.05em}.name-box{display:flex;gap:12px;align-items:center;border-bottom:1px solid #d4bbae;margin-top:11px;margin-bottom:18px}.name-box input{width:100%;min-width:0;border:0;background:none;color:var(--wine);font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(27px,3.4vw,42px);padding:0 0 9px;outline:0}.name-box button{font-size:26px;color:var(--wine);background:none;border:0;padding:0 4px 8px}.subtitle-label input{display:block;margin-top:8px;background:transparent;border:0;border-bottom:1px solid #e0d5c9;padding:9px 0;font-size:14px;width:100%;color:var(--ink);outline:0}.result-lead{margin:23px 0 19px;line-height:1.95;font-size:13px;color:#735e58}.color-signature{display:flex;align-items:center;gap:8px;font-size:11px;color:#9b8c80}.result-color{display:inline-block;width:15px;height:15px;border-radius:50%;background:var(--liquid)}.result-vessels{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:15px;border-left:1px solid #e4d8ce;padding:10px}.result-vessel-item{text-align:center;min-width:95px;max-width:150px}.result-vessel-art{width:118px;height:132px;margin:auto}.result-vessel-art svg{height:100%;width:100%;filter:drop-shadow(0 9px 5px #7b6a5428)}.result-vessel-name{font-family:Georgia,"Noto Serif TC",serif;font-size:14px;color:var(--wine);margin:6px 0}.result-vessel-note{font-size:10px;color:var(--muted)}.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#dccdc0;border:1px solid #dccdc0;margin-bottom:45px}.metric{background:#fffaf2;padding:19px 14px;text-align:center}.metric-val{display:block;font-family:Georgia,serif;font-size:28px;color:var(--wine)}.metric-title{display:block;font-size:11px;color:var(--muted);margin-top:6px}.result-section-head{display:flex;align-items:baseline;gap:20px;border-bottom:1px solid #d8cabb;padding-bottom:13px;margin-bottom:22px}.result-section-head span{font-size:10px;letter-spacing:.13em;color:#a38e7d}.result-section-head h2{font-size:25px;margin:0}.notes-result{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.note-result{padding:24px;border:1px solid #e1d2c3;background:#fffbf5;min-height:205px}.note-result span{color:#a68e79;font-size:11px;letter-spacing:.16em}.note-result h3{font-size:18px;color:var(--wine);margin:15px 0}.note-result p{font-size:12px;color:#6b6058;line-height:1.9}.result-text-columns{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:40px}.result-text-columns article,.body-reading{padding:26px 0 14px;border-top:1px solid #d4c4b5}.text-index{font-size:10px}.result-text-columns h3,.body-reading h3,.result-materials h3{font-size:23px;margin:15px 0}.result-text-columns p,.body-reading p{font-size:14px;line-height:2.1;color:#675951}.body-reading{margin-top:25px}.result-materials{border-top:1px solid #d4c4b5;margin-top:23px;padding:24px 0}.result-materials h3 span{color:#ad998a;font-size:14px}.result-material-tags{display:flex;gap:8px;flex-wrap:wrap}.result-material-tags span{background:#fff9f2;border:1px solid #dfcfc0;padding:8px 11px;font-size:12px;color:#705d53}.result-footer-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-top:1px solid #ddcdbb;padding-top:22px}.result-footer-actions .solid-btn{width:auto;min-width:190px}.result-footer-actions .quiet-link{margin-left:auto}.site-disclaimer{font-size:11px;line-height:1.9;color:#a09286;margin-top:24px;padding-bottom:22px}
+.saved-dialog{width:min(560px,calc(100% - 24px));max-height:80dvh;overflow:auto;border:1px solid #d5beaa;background:#fffaf2;box-shadow:0 18px 80px #2d1b183f;padding:26px;color:var(--ink)}.saved-dialog::backdrop{background:#281e1c95;backdrop-filter:blur(3px)}.dialog-top{display:flex;align-items:flex-start;justify-content:space-between}.dialog-top h2{font-size:30px;margin:10px 0}.icon-btn{font-size:28px;background:none;border:0;color:var(--wine)}.dialog-help{font-size:12px;color:var(--muted);line-height:1.9}.saved-list{display:flex;flex-direction:column;gap:10px;margin-top:20px}.saved-item{border:1px solid #e2d0c0;padding:15px;display:flex;gap:12px;justify-content:space-between;align-items:center}.saved-item h3{font-size:18px;margin-bottom:5px}.saved-item p{font-size:11px;color:var(--muted);margin:0}.saved-item-actions{display:flex;gap:7px}.saved-item-actions button{border:1px solid #d6c5b6;background:transparent;padding:8px;font-size:11px;color:var(--wine)}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,25px);background:#4b3438;color:#fff;padding:11px 18px;font-size:12px;letter-spacing:.04em;z-index:50;opacity:0;pointer-events:none;transition:all .25s;max-width:90vw;line-height:1.6;text-align:center}.toast.visible{opacity:1;transform:translate(-50%,0)}.loading-overlay,.intro{position:fixed;inset:0;z-index:40;background:#f4ede3;display:flex;flex-direction:column;align-items:center;justify-content:center}.loading-overlay[hidden],.intro[hidden]{display:none}.loading-overlay{background:#efe6dacc;backdrop-filter:blur(8px)}.loading-sun{font-size:75px;color:var(--brass);animation:orbit 3s linear infinite}.loading-overlay p{font-family:Georgia,"Noto Serif TC",serif;font-size:23px;margin:10px 0}.loading-overlay span{font-size:9px;letter-spacing:.2em;color:#998773}.intro{overflow:hidden;color:#f5e8d8;background:radial-gradient(ellipse at center,#70505b,#463239 66%,#312429)}.intro-glow{position:absolute;width:280px;height:280px;border:1px solid #ecdcc032;border-radius:50%;box-shadow:0 0 0 37px #ddc8a208,0 0 0 75px #ddc8a20a,0 0 110px 40px #c08e8a23;animation:introPulse 4s ease-in-out infinite}.intro-content{position:relative;text-align:center;z-index:1;padding:25px}.intro-eyebrow{font-size:10px;letter-spacing:.25em;color:#dbc4b0}.intro-symbol{font-size:100px;line-height:1.3;color:#ddc49c;text-shadow:0 0 45px #dda98082;animation:orbit 30s linear infinite}.intro h2{font-size:clamp(34px,6vw,66px);letter-spacing:.21em;margin:0 0 15px}.intro p{font-family:Georgia,"Noto Serif TC",serif;line-height:2.4;font-size:16px;color:#f1e1d2}.intro-enter{margin-top:20px;background:transparent;color:#f3e8dd;border:1px solid #e0c9b1;padding:15px 34px;letter-spacing:.1em}.intro-enter:hover{background:#ffffff1a}.intro-hint{display:block;color:#b9a9a1;font-size:11px;margin-top:22px}.intro.hiding{opacity:0;transition:opacity .45s;pointer-events:none}
+@keyframes floatBottle{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-7px) rotate(1deg)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes wave{0%,100%{transform:rotate(0deg) scaleY(1)}50%{transform:rotate(2deg) scaleY(.66)}}@keyframes bubbleUp{0%{transform:translateY(0) scale(.6);opacity:0}20%{opacity:.8}85%{opacity:.6}100%{transform:translateY(-140px) scale(1.3);opacity:0}}@keyframes particlePop{0%{transform:translate(0,0) scale(.4);opacity:0}15%{opacity:.9}100%{transform:translate(var(--dx),var(--dy)) scale(0);opacity:0}}@keyframes introPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@media(max-width:1150px){.studio{grid-template-columns:1fr 1fr}.ingredient-grid{grid-template-columns:1fr}.vessel-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.scene-halo{width:260px;height:260px}.halo-two{width:210px;height:210px}.orbit-text-top{left:1%;top:10%}.orbit-text-bottom{right:0;bottom:10%}}
+@media(max-width:740px){body{height:100dvh}.topbar{height:58px;padding:0 13px;gap:7px}.brand{gap:5px}.brand-mark{font-size:26px}.brand-title{font-size:14px;letter-spacing:.06em}.brand-title small{font-size:6px;letter-spacing:.12em;margin-top:1px}.steps{gap:5px}.step{padding:6px 2px;gap:2px;font-size:10px}.step>span:first-child{font-size:14px}.step-word{display:none}.step-line{width:10px}.saved-trigger{padding:6px;gap:3px}.saved-label{display:none}.saved-symbol{font-size:17px}.saved-count{font-size:9px;min-width:16px;height:16px}main{height:calc(100dvh - 58px)}.studio{display:flex;flex-direction:column;height:100%;min-height:0}.preview{order:0;flex:0 0 clamp(180px,30dvh,248px);padding:9px 16px 0;overflow:hidden;border-bottom:1px solid #dbcbbb;position:relative}.preview-top{position:absolute;top:10px;left:14px;right:14px;z-index:4}.preview-top .eyebrow{font-size:8px}.preview-counter b{font-size:21px}.vessel-scene{height:calc(100% - 31px);width:100%;margin-top:0;overflow:hidden}.live-bottle{transform-origin:center;scale:.6;animation:none;top:14px}.scene-halo{width:200px;height:200px}.halo-two{width:150px;height:150px}.orbit-text{display:none}.scene-footer{bottom:0;font-size:10px}.preview-detail{display:none}.mobile-preview-foot{height:31px;display:flex;align-items:center;justify-content:space-between;gap:7px;border-top:1px solid #d6c6b7;color:#77685e;font-size:11px;position:relative;z-index:4;flex-shrink:0}.mobile-preview-foot b{color:var(--wine)}.mobile-preview-foot button{border:0;background:transparent;color:var(--wine);font-size:11px;font-weight:700;padding:7px 0;white-space:nowrap}.library{order:1;flex:1;min-height:0;border-right:0}.library-head{padding:12px 13px 8px}.library-head .eyebrow{display:none}.section-head{margin:0 0 11px;align-items:center}.section-head h1{font-size:21px;margin:0 0 3px}.section-head p{font-size:11px;line-height:1.4}.tiny-stamp{display:none}.search-wrap{height:41px}.search-wrap input{font-size:12px}.filter-scroll{margin-top:9px;gap:6px}.filter{padding:7px 10px;font-size:11px}.filter-meta{margin-top:6px;font-size:10px}.ingredient-scroll{padding:8px 12px 16px}.ingredient-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.ingredient-card{padding:10px;min-height:114px}.ingredient-name{font-size:16px;margin:2px 0 5px}.ingredient-type{font-size:9px}.ingredient-desc{font-size:10px;line-height:1.5}.ingredient-footer{padding-top:7px;font-size:9px}.ingredient-action{width:22px;height:22px;font-size:16px}.library-bottom-note{font-size:11px;padding:17px 0 5px}.stage-page{padding:19px 14px}.stage-title-row{display:block;margin:14px 0 24px}.stage-title-row h1{font-size:27px}.stage-title-row p{font-size:12px}.stage-back{margin-top:17px}.vessels-layout{display:block}.vessel-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.vessel-card{min-height:144px;padding:9px 3px;gap:6px}.vessel-card.active{padding:8px 2px}.vessel-svg{width:77px;height:92px}.vessel-card .vessel-name{font-size:12px}.vessel-sidebar{margin-top:18px;padding:18px;position:static;min-height:0}.picked-vessels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.result-hero{display:block;margin:20px 0;padding:20px}.result-serial{margin-bottom:20px}.name-box input{font-size:28px}.result-vessels{margin-top:20px;padding:16px 0 0;border-left:0;border-top:1px solid #e4d8ce}.result-vessel-art{width:92px;height:102px}.result-vessel-item{min-width:85px}.metrics{grid-template-columns:repeat(3,1fr);margin-bottom:30px}.metric{padding:15px 5px}.metric-val{font-size:24px}.metric-title{font-size:10px}.notes-result{display:block}.note-result{min-height:0;margin-bottom:10px;padding:18px}.result-section-head{display:block}.result-section-head h2{font-size:23px;margin-top:9px}.result-text-columns{display:block;margin-top:20px}.result-text-columns article{margin-top:22px}.result-text-columns p,.body-reading p{font-size:13px}.result-footer-actions{display:grid;grid-template-columns:1fr 1fr}.result-footer-actions .solid-btn{width:100%;grid-column:span 2}.result-footer-actions .outline-btn{white-space:normal}.result-footer-actions .quiet-link{grid-column:span 2;margin:auto;padding:12px}}
+@media(max-width:380px){.preview{flex-basis:180px}.brand-title{font-size:13px}.ingredient-name{font-size:14px}.ingredient-card{padding:8px;min-height:112px}.vessel-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-height:660px) and (max-width:740px){.preview{flex-basis:170px}.library-head{padding-top:8px}.section-head{margin-bottom:6px}.section-head p{display:none}.filter-scroll{margin-top:6px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{body{height:auto;overflow:visible;background:white}.topbar,.studio,#vesselsStage,.grain,.no-print,.saved-dialog,.toast,.intro,.loading-overlay{display:none!important}main,.stage-page{height:auto;overflow:visible!important;padding:0!important}#resultStage{display:block!important}.result-inner{max-width:none}.result-hero{break-inside:avoid}.notes-result{break-inside:avoid}.note-result{break-inside:avoid}.site-disclaimer{font-size:9px}}
+
+[hidden]{display:none!important}
+
+</style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <button class="brand" id="homeBrand" type="button" aria-label="回到配方工作區"><span class="brand-mark">✺</span><span class="brand-title">你今天的味道<small>THE SCENT OF TODAY</small></span></button>
+    <nav class="steps" aria-label="調香步驟"><button type="button" class="step active" data-goto="mix"><span>01</span><span class="step-word">調製</span></button><span class="step-line"></span><button type="button" class="step" data-goto="vessels"><span>02</span><span class="step-word">容器</span></button><span class="step-line"></span><button type="button" class="step" data-goto="result"><span>03</span><span class="step-word">香水檔案</span></button></nav>
+    <button class="saved-trigger" id="openSaved" type="button" aria-label="我的保存作品"><span class="saved-symbol">▤</span><span class="saved-label">我的作品</span><span id="savedCount" class="saved-count">0</span></button>
+  </header>
+
+  <main id="main">
+    <div id="mixStage" class="studio">
+      <section class="library panel" aria-label="調香素材庫">
+        <div class="library-head">
+          <div class="eyebrow">ATELIER / 01 — SELECT INGREDIENTS</div>
+          <div class="section-head"><div><h1>挑一點今天的味道。</h1><p>一片記憶、一種感覺，或是你熟悉的香氣。</p></div><span class="tiny-stamp">151<br>INGREDIENTS</span></div>
+          <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜尋一段心情、氣味或記憶…" autocomplete="off"><kbd id="clearSearch" role="button" tabindex="0" aria-label="清除搜尋" hidden>×</kbd></label>
+          <div class="filter-scroll" id="filters" aria-label="素材分類"></div>
+          <div class="filter-meta"><span id="resultCount">全部 151 項素材</span><button type="button" id="clearAll" class="quiet-link">清空配方</button></div>
+        </div>
+        <div class="ingredient-scroll" id="ingredientScroll"><div class="ingredient-grid" id="ingredientGrid"></div><p class="library-bottom-note">每一種選擇，都會被記錄在這瓶氣味裡。</p></div>
+      </section>
+
+      <section class="preview panel" aria-label="香水即時預覽">
+        <div class="preview-top"><span class="eyebrow">LIVE COMPOSITION <i class="live-dot"></i></span><span class="preview-counter"><b id="selectedCount">00</b><small> 材料</small></span></div>
+        <div class="vessel-scene" id="bottleScene">
+          <div class="scene-halo halo-one"></div><div class="scene-halo halo-two"></div>
+          <div class="scene-dust" id="sceneDust" aria-hidden="true"></div>
+          <span class="orbit-text orbit-text-top">COMPOSED OF MOMENTS</span>
+          <span class="orbit-text orbit-text-bottom">SCENT LABORATORY · Nº 001</span>
+          <div class="live-bottle" id="liveBottle" aria-label="即時香水瓶">
+            <div class="bottle-lid"></div><div class="bottle-neck"></div>
+            <div class="bottle-glass"><div class="bottle-liquid" id="bottleLiquid"><div class="liquid-ripple"></div><div class="bubbles" id="bubbles"></div></div><span class="bottle-shine"></span><div class="bottle-label"><span>你今天的味道</span><b id="bottleLabel">未命名的今天</b><small>EAU D'IMAGINATION</small></div></div>
+          </div>
+          <div class="scene-footer"><span id="sceneMood">等待第一種氣味</span><span class="scene-swatch" id="sceneSwatch"></span></div>
+        </div>
+        <div class="preview-detail">
+          <div class="preview-heading"><h2>這瓶，正在變成什麼？</h2><span id="formulaCount">0 / 151</span></div>
+          <div class="note-strip" id="noteStrip"></div>
+          <div class="chosen-block"><div class="chosen-title">已加入的原料 <span id="chosenTotal">0</span></div><div class="chosen-list" id="chosenList"><span class="empty-chosen">還沒有添加原料。從左邊選一個試試。</span></div></div>
+          <div class="preview-actions"><button class="solid-btn" id="toVessels" type="button">選擇容器 <span aria-hidden="true">↗</span></button></div>
+        </div>
+        <div class="mobile-preview-foot"><span><b id="mobileCount">0</b> 項已選 · <span id="mobileMood">等待第一種氣味</span></span><button type="button" id="mobileToVessels">下一步：容器 <span aria-hidden="true">→</span></button></div>
+      </section>
+    </div>
+
+    <section id="vesselsStage" class="stage-page" hidden>
+      <div class="stage-page-inner">
+        <div class="stage-kicker">ATELIER / 02 — CHOOSE YOUR VESSEL</div>
+        <div class="stage-title-row"><div><h1>把今天，裝進什麼裡面？</h1><p>它可以是一瓶香水，也可以是你房間裡的一只杯子。你可以選一個或多個容器。</p></div><button class="outline-btn stage-back" id="backToMix" type="button">← 回到配方</button></div>
+        <div class="vessels-layout"><div><div id="vesselGrid" class="vessel-grid"></div></div><aside class="vessel-sidebar"><div class="sidebar-label">YOUR SELECTION</div><h2>已選容器</h2><div id="pickedVessels" class="picked-vessels"></div><div class="side-divider"></div><p class="aside-info">可以指定每件容器承接前調、中調、後調，或完整的混合配方。</p><button class="solid-btn" id="generateBtn" type="button">生成我的香水 <span aria-hidden="true">✳</span></button></aside></div>
+      </div>
+    </section>
+
+    <section id="resultStage" class="stage-page result-page" hidden>
+      <div class="result-inner" id="printArea">
+        <div class="result-topline"><span class="stage-kicker">ATELIER / 03 — YOUR FRAGRANCE ARCHIVE</span><button type="button" id="backToVessels" class="outline-btn no-print">← 修改容器</button></div>
+        <div class="result-hero"><div class="result-intro"><span class="result-serial" id="resultSerial">FORMULA Nº —</span><div class="name-label">為這瓶香水取個名字</div><div class="name-box"><input id="perfumeName" maxlength="36" aria-label="香水名稱"><button id="rerollName" type="button" title="換個名字" aria-label="重新隨機命名">↻</button></div><label class="subtitle-label">副標題<input type="text" id="perfumeSubtitle" maxlength="80" placeholder="留給今天的一句話"></label><p class="result-lead" id="resultLead"></p><div class="color-signature"><span class="result-color" id="resultColor"></span><span id="colorCode"></span><span>／這瓶氣味的顏色</span></div></div><div class="result-vessels" id="resultVessels"></div></div>
+        <div class="metrics" id="metrics"></div>
+        <div class="result-section-head"><span>01 / THE STRUCTURE</span><h2>這瓶香水的三段時間</h2></div><div class="notes-result" id="notesResult"></div>
+        <div class="result-text-columns"><article><span class="text-index">02 / OLFACTORY PROFILE</span><h3>香氣檔案</h3><p id="expertText"></p></article><article><span class="text-index">03 / AN IMAGINED SCENT</span><h3>如果氣味會說話</h3><p id="poeticText"></p></article></div>
+        <article class="body-reading"><span class="text-index">04 / ON THE SKIN</span><h3>它可能留在身體上的感覺</h3><p id="bodyText"></p></article>
+        <div class="result-materials"><span class="text-index">ALL INGREDIENTS</span><h3>今天使用的所有原料 <span id="allMaterialsCount"></span></h3><div id="resultMaterialList" class="result-material-tags"></div></div>
+        <div class="result-footer-actions no-print"><button class="solid-btn" id="saveRecipe" type="button">保存這瓶香水</button><button class="outline-btn" id="downloadCard" type="button">下載香水卡 PNG</button><button class="outline-btn" id="printRecipe" type="button">列印檔案</button><button class="quiet-link" id="makeAnother" type="button">← 再調製一瓶</button></div>
+        <p class="site-disclaimer">這是一份藝術性虛擬氣味檔案。抽象原料為感官想像，不代表實際可調製香水、身體狀態評估或醫療建議。保存僅在這台裝置的瀏覽器中進行。</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="savedDialog" class="saved-dialog"><div class="dialog-top"><div><span class="eyebrow">PRIVATE FRAGRANCE ARCHIVE</span><h2>我的香水作品</h2></div><button id="closeSaved" type="button" class="icon-btn" aria-label="關閉">×</button></div><p class="dialog-help">作品儲存在這個瀏覽器中；更換手機或清除瀏覽資料可能會消失。建議另外下載香水卡。</p><div id="savedList" class="saved-list"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="loadingOverlay" class="loading-overlay" hidden><div class="loading-sun">✺</div><p>正在讓氣味慢慢成形…</p><span>BLENDING THE MOMENTS</span></div>
+  <div id="intro" class="intro" aria-label="網站介紹"><div class="intro-glow"></div><div class="intro-content"><span class="intro-eyebrow">A SMALL EXPERIMENT IN FEELING</span><div class="intro-symbol">✺</div><h2>你今天的味道</h2><p>有些感覺說不清楚。<br>不如，把它調成一瓶香水。</p><button id="skipIntro" type="button" class="intro-enter">走進調製所　↗</button><span class="intro-hint">沒有標準配方，只有你的今天。</span></div></div>
+  <script>
+window.SCENT_MATERIALS = [
+  {
+    "id": 0,
+    "name": "佛手柑",
+    "group": "柑橘",
+    "kind": "真實香材",
+    "note": "top",
+    "desc": "清亮、微苦、帶有雨後的冷光",
+    "temp": 32,
+    "moist": 38,
+    "texture": "清脆",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 1,
+    "name": "玫瑰",
+    "group": "花香",
+    "kind": "真實香材",
+    "note": "heart",
+    "desc": "柔軟、帶一點粉紅色的距離感",
+    "temp": 52,
+    "moist": 48,
+    "texture": "絲絨",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 2,
+    "name": "茉莉",
+    "group": "花香",
+    "kind": "真實香材",
+    "note": "heart",
+    "desc": "白色、夜裡開放、靠近皮膚才清楚",
+    "temp": 58,
+    "moist": 55,
+    "texture": "乳白",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 3,
+    "name": "橙花",
+    "group": "花香",
+    "kind": "真實香材",
+    "note": "top",
+    "desc": "像日光穿過乾淨的窗簾",
+    "temp": 62,
+    "moist": 43,
+    "texture": "輕盈",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 4,
+    "name": "依蘭依蘭",
+    "group": "花香",
+    "kind": "真實香材",
+    "note": "heart",
+    "desc": "溫熱、奶油般、帶有一點顫動",
+    "temp": 72,
+    "moist": 68,
+    "texture": "滑順",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 5,
+    "name": "薰衣草",
+    "group": "草本",
+    "kind": "真實香材",
+    "note": "heart",
+    "desc": "安靜的紫色，帶著乾燥空氣",
+    "temp": 40,
+    "moist": 28,
+    "texture": "乾燥",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 6,
+    "name": "香根草",
+    "group": "草本",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "乾草、根系、風吹過空房間",
+    "temp": 31,
+    "moist": 31,
+    "texture": "纖維",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 7,
+    "name": "鳶尾花",
+    "group": "粉質",
+    "kind": "真實香材",
+    "note": "heart",
+    "desc": "粉末、陰影與一點冷冽的優雅",
+    "temp": 35,
+    "moist": 25,
+    "texture": "粉霧",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 8,
+    "name": "桂花",
+    "group": "花果",
+    "kind": "真實香材",
+    "note": "heart",
+    "desc": "杏桃、茶、和一段很短的夏天",
+    "temp": 64,
+    "moist": 46,
+    "texture": "細緻",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 9,
+    "name": "雪松",
+    "group": "木質",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "鉛筆削屑、乾燥木頭、清醒的垂直感",
+    "temp": 38,
+    "moist": 20,
+    "texture": "乾燥",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 10,
+    "name": "檀香",
+    "group": "木質",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "溫暖、奶白、像慢慢靠近的手掌",
+    "temp": 55,
+    "moist": 44,
+    "texture": "奶油木質",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 11,
+    "name": "廣藿香",
+    "group": "木質",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "潮濕土地、深綠、帶著複雜的陰影",
+    "temp": 42,
+    "moist": 72,
+    "texture": "濕潤",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 12,
+    "name": "香草",
+    "group": "甜香",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "柔軟的甜，像被棉被包住",
+    "temp": 72,
+    "moist": 49,
+    "texture": "黏稠",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 13,
+    "name": "麝香",
+    "group": "動物性",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "貼近皮膚的安靜溫度",
+    "temp": 54,
+    "moist": 58,
+    "texture": "肌膚",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 14,
+    "name": "琥珀",
+    "group": "樹脂",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "曖昧、金色、像黃昏留在衣服上",
+    "temp": 69,
+    "moist": 61,
+    "texture": "樹脂",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 15,
+    "name": "乳香",
+    "group": "樹脂",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "煙霧向上，留下比話更久的空白",
+    "temp": 45,
+    "moist": 26,
+    "texture": "煙霧",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 16,
+    "name": "黑胡椒",
+    "group": "辛香",
+    "kind": "真實香材",
+    "note": "top",
+    "desc": "一個突然清醒的尖點",
+    "temp": 63,
+    "moist": 35,
+    "texture": "顆粒",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 17,
+    "name": "小豆蔻",
+    "group": "辛香",
+    "kind": "真實香材",
+    "note": "top",
+    "desc": "清涼、明亮、像打開一只陌生抽屜",
+    "temp": 60,
+    "moist": 42,
+    "texture": "脆裂",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 18,
+    "name": "海鹽",
+    "group": "礦物",
+    "kind": "真實香材",
+    "note": "top",
+    "desc": "透明、微鹹、皮膚上留下的風",
+    "temp": 27,
+    "moist": 76,
+    "texture": "晶體",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 19,
+    "name": "可可",
+    "group": "食物",
+    "kind": "真實香材",
+    "note": "base",
+    "desc": "烘焙過的深色甜味，帶著一點苦",
+    "temp": 66,
+    "moist": 57,
+    "texture": "粉末",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 20,
+    "name": "熱湯",
+    "group": "食物",
+    "kind": "食物飲品",
+    "note": "heart",
+    "desc": "一口一口把身體帶回來的蒸氣",
+    "temp": 70,
+    "moist": 78,
+    "texture": "流動",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 21,
+    "name": "白吐司",
+    "group": "食物",
+    "kind": "食物飲品",
+    "note": "heart",
+    "desc": "柔軟、乾淨、烤箱打開時的暖氣",
+    "temp": 62,
+    "moist": 43,
+    "texture": "蓬鬆",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 22,
+    "name": "奶油",
+    "group": "食物",
+    "kind": "食物飲品",
+    "note": "base",
+    "desc": "厚、滑、包覆著鹽的甜",
+    "temp": 68,
+    "moist": 61,
+    "texture": "滑順",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 23,
+    "name": "橘子皮",
+    "group": "食物",
+    "kind": "食物飲品",
+    "note": "top",
+    "desc": "明亮、酸、帶一點指尖的苦",
+    "temp": 75,
+    "moist": 39,
+    "texture": "油亮",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 24,
+    "name": "白飯",
+    "group": "食物",
+    "kind": "食物",
+    "note": "heart",
+    "desc": "溫熱、柔軟、最日常的飽足",
+    "temp": 55,
+    "moist": 70,
+    "texture": "米粒",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 25,
+    "name": "白粥",
+    "group": "食物",
+    "kind": "食物",
+    "note": "heart",
+    "desc": "淡、熱、像生病時有人把碗端近",
+    "temp": 43,
+    "moist": 79,
+    "texture": "水霧",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 26,
+    "name": "炒洋蔥",
+    "group": "食物",
+    "kind": "食物",
+    "note": "heart",
+    "desc": "甜、焦香、鍋邊留下的熱度",
+    "temp": 71,
+    "moist": 52,
+    "texture": "焦糖",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 27,
+    "name": "海苔",
+    "group": "食物",
+    "kind": "食物",
+    "note": "top",
+    "desc": "鹹、綠、包著一點海的陰影",
+    "temp": 34,
+    "moist": 77,
+    "texture": "薄脆",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 28,
+    "name": "蘋果",
+    "group": "食物",
+    "kind": "食物",
+    "note": "top",
+    "desc": "清脆、酸甜、剛切開的白色",
+    "temp": 66,
+    "moist": 44,
+    "texture": "脆裂",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 29,
+    "name": "烤地瓜",
+    "group": "食物",
+    "kind": "食物",
+    "note": "base",
+    "desc": "泥土、甜熱、紙袋裡的午後",
+    "temp": 73,
+    "moist": 57,
+    "texture": "粉糯",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 30,
+    "name": "冰塊",
+    "group": "食物",
+    "kind": "食物",
+    "note": "top",
+    "desc": "透明、低溫、碰到牙齒的瞬間",
+    "temp": 8,
+    "moist": 28,
+    "texture": "硬脆",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 31,
+    "name": "醬油",
+    "group": "食物",
+    "kind": "食物",
+    "note": "base",
+    "desc": "鹹、深、廚房燈下的木質",
+    "temp": 49,
+    "moist": 73,
+    "texture": "液體",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 32,
+    "name": "安心",
+    "group": "情緒",
+    "kind": "情緒感受",
+    "note": "base",
+    "desc": "柔軟、低聲、在門已經鎖好的房間裡",
+    "temp": 46,
+    "moist": 52,
+    "texture": "毛毯",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 33,
+    "name": "安全感",
+    "group": "情緒",
+    "kind": "情緒感受",
+    "note": "base",
+    "desc": "厚實、溫暖、像背後有一面牆",
+    "temp": 57,
+    "moist": 48,
+    "texture": "包覆",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 34,
+    "name": "被看見",
+    "group": "情緒",
+    "kind": "情緒感受",
+    "note": "heart",
+    "desc": "明亮卻不刺眼，像有人記得你的名字",
+    "temp": 61,
+    "moist": 45,
+    "texture": "透亮",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 35,
+    "name": "期待",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "top",
+    "desc": "微酸、往前、還沒有落地的光",
+    "temp": 70,
+    "moist": 31,
+    "texture": "氣泡",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 36,
+    "name": "希望",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "top",
+    "desc": "清晨第一道不確定但真實的亮",
+    "temp": 67,
+    "moist": 24,
+    "texture": "輕盈",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 37,
+    "name": "信任",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "heart",
+    "desc": "不急著證明，像溫熱的木頭",
+    "temp": 49,
+    "moist": 43,
+    "texture": "溫厚",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 38,
+    "name": "依戀",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "heart",
+    "desc": "靠近之後仍然停留的氣味",
+    "temp": 56,
+    "moist": 63,
+    "texture": "黏著",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 39,
+    "name": "自由",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "top",
+    "desc": "被風吹散的髮尾與很大的天空",
+    "temp": 44,
+    "moist": 18,
+    "texture": "風",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 40,
+    "name": "平靜",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "heart",
+    "desc": "空白不是空洞，是可以呼吸的地方",
+    "temp": 28,
+    "moist": 32,
+    "texture": "平滑",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 41,
+    "name": "感激",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "heart",
+    "desc": "溫暖的手，和一句不用回覆的謝謝",
+    "temp": 51,
+    "moist": 50,
+    "texture": "柔軟",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 42,
+    "name": "失望",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "heart",
+    "desc": "甜味撤退之後留下的薄薄酸感",
+    "temp": 42,
+    "moist": 55,
+    "texture": "乾裂",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 43,
+    "name": "嫉妒",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "top",
+    "desc": "綠色、尖銳、停在喉嚨的位置",
+    "temp": 68,
+    "moist": 37,
+    "texture": "尖刺",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 44,
+    "name": "遲疑",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "top",
+    "desc": "一扇門開了一半，風還沒有決定方向",
+    "temp": 36,
+    "moist": 45,
+    "texture": "懸浮",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 45,
+    "name": "心軟",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "heart",
+    "desc": "想要拒絕，最後卻把燈留著",
+    "temp": 58,
+    "moist": 54,
+    "texture": "絲綢",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 46,
+    "name": "沒說出口",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "heart",
+    "desc": "卡在舌尖的紙張與一點鐵鏽",
+    "temp": 39,
+    "moist": 39,
+    "texture": "紙質",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 47,
+    "name": "一直想太多",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "top",
+    "desc": "快速繞圈，最後變成一間沒有出口的房間",
+    "temp": 76,
+    "moist": 40,
+    "texture": "顫動",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 48,
+    "name": "焦慮",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "top",
+    "desc": "辛辣、尖銳、快速揮發的白噪音",
+    "temp": 81,
+    "moist": 29,
+    "texture": "細針",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 49,
+    "name": "孤獨",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "base",
+    "desc": "乾燥、空曠、低溫，遠處沒有回音",
+    "temp": 24,
+    "moist": 17,
+    "texture": "空氣",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 50,
+    "name": "失眠",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "base",
+    "desc": "凌晨的冷光，和一個一直沒被按掉的念頭",
+    "temp": 35,
+    "moist": 22,
+    "texture": "玻璃",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 51,
+    "name": "麻木",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "base",
+    "desc": "幾乎無味，卻在皮膚上形成一層薄膜",
+    "temp": 17,
+    "moist": 29,
+    "texture": "蠟質",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 52,
+    "name": "憤怒",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "heart",
+    "desc": "高溫、金屬、還沒有熄滅的火",
+    "temp": 90,
+    "moist": 32,
+    "texture": "灼熱",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 53,
+    "name": "羞愧",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "base",
+    "desc": "臉頰發熱後躲進深色布料",
+    "temp": 63,
+    "moist": 43,
+    "texture": "絨面",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 54,
+    "name": "空虛",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "base",
+    "desc": "很大的容器，裡面只剩一點回聲",
+    "temp": 18,
+    "moist": 12,
+    "texture": "中空",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 55,
+    "name": "疲憊",
+    "group": "心理",
+    "kind": "低落情緒",
+    "note": "base",
+    "desc": "濕重的棉布，慢慢貼住肩膀",
+    "temp": 29,
+    "moist": 67,
+    "texture": "沉重",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 56,
+    "name": "想逃跑",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "top",
+    "desc": "檸檬般的酸與鞋底離開地面的瞬間",
+    "temp": 78,
+    "moist": 20,
+    "texture": "疾走",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 57,
+    "name": "想念",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "base",
+    "desc": "溫熱、柔軟、持續殘留在房間裡",
+    "temp": 53,
+    "moist": 58,
+    "texture": "毛衣",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 58,
+    "name": "還沒有準備好",
+    "group": "心理",
+    "kind": "複雜情緒",
+    "note": "heart",
+    "desc": "包裹還沒拆，氣味停在紙箱裡",
+    "temp": 37,
+    "moist": 42,
+    "texture": "紙箱",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 59,
+    "name": "終於放下",
+    "group": "心理",
+    "kind": "情緒感受",
+    "note": "base",
+    "desc": "最後一口呼吸，和變輕的手掌",
+    "temp": 30,
+    "moist": 25,
+    "texture": "輕薄",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 60,
+    "name": "暴風雨前的平靜",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "heart",
+    "desc": "安靜、低溫、空氣裡藏著尚未發生的事",
+    "temp": 32,
+    "moist": 48,
+    "texture": "平滑",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 61,
+    "name": "好奇",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "top",
+    "desc": "清亮、往前探、像打開一扇陌生的門",
+    "temp": 64,
+    "moist": 34,
+    "texture": "細碎",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 62,
+    "name": "鬆一口氣",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "top",
+    "desc": "胸口打開之後的乾淨空氣",
+    "temp": 39,
+    "moist": 51,
+    "texture": "輕盈",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 63,
+    "name": "驕傲",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "heart",
+    "desc": "溫熱、金色、站直之後的木質",
+    "temp": 73,
+    "moist": 38,
+    "texture": "挺立",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 64,
+    "name": "內疚",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "base",
+    "desc": "暗紅、濕重、停在胃裡的沉默",
+    "temp": 49,
+    "moist": 68,
+    "texture": "濃稠",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 65,
+    "name": "悲傷",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "base",
+    "desc": "水氣、灰藍、慢慢退去的溫度",
+    "temp": 28,
+    "moist": 81,
+    "texture": "濕霧",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 66,
+    "name": "渴望",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "heart",
+    "desc": "甜、熱、往前伸出的手",
+    "temp": 77,
+    "moist": 43,
+    "texture": "拉絲",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 67,
+    "name": "想保護自己",
+    "group": "心理",
+    "kind": "心理狀態",
+    "note": "base",
+    "desc": "乾淨、冷冽、像一扇關上的門",
+    "temp": 24,
+    "moist": 26,
+    "texture": "硬邊",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 68,
+    "name": "心跳很快",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "高溫、震動、短暫爆發的紅色",
+    "temp": 88,
+    "moist": 44,
+    "texture": "震動",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 69,
+    "name": "心跳變慢",    "group": "身體",
+    "kind": "身體感受",
+    "note": "base",
+    "desc": "規律、低沉，像水面恢復平整",
+    "temp": 30,
+    "moist": 55,
+    "texture": "平滑",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 70,
+    "name": "胸口悶",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "heart",
+    "desc": "往內收縮的空氣，帶一點礦物苦味",
+    "temp": 58,
+    "moist": 64,
+    "texture": "緊繃",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 71,
+    "name": "手心出汗",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "鹹濕、微熱、握住一個秘密",
+    "temp": 62,
+    "moist": 78,
+    "texture": "濕潤",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 72,
+    "name": "手腳冰冷",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "金屬邊緣與很遠的藍色",
+    "temp": 21,
+    "moist": 35,
+    "texture": "冷硬",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 73,
+    "name": "臉頰發熱",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "粉紅、熱、想躲起來的甜",
+    "temp": 78,
+    "moist": 47,
+    "texture": "柔熱",
+    "spread": "close",
+    "duration": "short"
+  },
+  {
+    "id": 74,
+    "name": "剛哭完",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "heart",
+    "desc": "水分蒸發後的鹽與柔軟疲倦",
+    "temp": 31,
+    "moist": 86,
+    "texture": "水膜",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 75,
+    "name": "呼吸很淺",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "薄薄的空氣，一直不敢用力",
+    "temp": 22,
+    "moist": 27,
+    "texture": "薄膜",
+    "spread": "close",
+    "duration": "short"
+  },
+  {
+    "id": 76,
+    "name": "曬過太陽",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "heart",
+    "desc": "皮膚溫度和乾燥的午後草地",
+    "temp": 72,
+    "moist": 35,
+    "texture": "乾暖",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 77,
+    "name": "淋過雨",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "濕衣服、清涼皮膚與城市水氣",
+    "temp": 34,
+    "moist": 89,
+    "texture": "水滴",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 78,
+    "name": "剛洗完澡",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "皂感、熱霧、乾淨但還沒有穿上衣服",
+    "temp": 48,
+    "moist": 70,
+    "texture": "滑溜",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 79,
+    "name": "肚子餓",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "top",
+    "desc": "空白、尖銳、期待下一口味道",
+    "temp": 47,
+    "moist": 19,
+    "texture": "空洞",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 80,
+    "name": "吃太飽",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "base",
+    "desc": "厚重、溫熱、慢慢沉到椅子裡",
+    "temp": 67,
+    "moist": 67,
+    "texture": "飽滿",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 81,
+    "name": "擁抱過後",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "heart",
+    "desc": "衣料、體溫與分開後留下的凹痕",
+    "temp": 58,
+    "moist": 71,
+    "texture": "布料",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 82,
+    "name": "身體正在恢復",
+    "group": "身體",
+    "kind": "身體感受",
+    "note": "heart",
+    "desc": "溫度回到中間，帶著一點新的綠色",
+    "temp": 43,
+    "moist": 56,
+    "texture": "嫩葉",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 83,
+    "name": "喉嚨乾",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "top",
+    "desc": "紙張般乾燥，需要一口水才能往下",
+    "temp": 36,
+    "moist": 18,
+    "texture": "乾裂",
+    "spread": "close",
+    "duration": "short"
+  },
+  {
+    "id": 84,
+    "name": "頭很沉",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "base",
+    "desc": "低雲、濕棉布與緩慢的重量",
+    "temp": 26,
+    "moist": 71,
+    "texture": "霧面",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 85,
+    "name": "坐不住",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "top",
+    "desc": "細小顫動、熱氣與想離開椅子的衝動",
+    "temp": 69,
+    "moist": 33,
+    "texture": "顫動",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 86,
+    "name": "被棉被包住",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "base",
+    "desc": "柔軟、暖、包住肩膀的安全感",
+    "temp": 61,
+    "moist": 69,
+    "texture": "絨布",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 87,
+    "name": "運動完",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "top",
+    "desc": "鹽、熱皮膚與恢復中的呼吸",
+    "temp": 79,
+    "moist": 83,
+    "texture": "汗水",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 88,
+    "name": "咬緊牙關",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "heart",
+    "desc": "金屬、緊繃、沒有說出口的力量",
+    "temp": 67,
+    "moist": 29,
+    "texture": "硬質",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 89,
+    "name": "眼睛乾澀",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "base",
+    "desc": "螢幕藍光、乾燥與需要閉上的房間",
+    "temp": 23,
+    "moist": 16,
+    "texture": "薄膜",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 90,
+    "name": "深呼吸之後",
+    "group": "身體",
+    "kind": "身體狀態",
+    "note": "top",
+    "desc": "草葉、胸腔擴張與重新得到的空間",
+    "temp": 42,
+    "moist": 59,
+    "texture": "空氣",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 91,
+    "name": "冷掉的咖啡",
+    "group": "飲品",
+    "kind": "食物飲品",
+    "note": "heart",
+    "desc": "苦、深、微酸、被遺忘的烘焙感",
+    "temp": 38,
+    "moist": 29,
+    "texture": "沉澱",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 92,
+    "name": "紅茶",
+    "group": "飲品",
+    "kind": "食物飲品",
+    "note": "heart",
+    "desc": "微澀、木質、杯底停留的下午",
+    "temp": 42,
+    "moist": 47,
+    "texture": "液體",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 93,
+    "name": "豆漿",
+    "group": "飲品",
+    "kind": "食物飲品",
+    "note": "heart",
+    "desc": "白色、溫熱、早餐前的安靜",
+    "temp": 54,
+    "moist": 78,
+    "texture": "乳白",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 94,
+    "name": "啤酒",
+    "group": "飲品",
+    "kind": "食物飲品",
+    "note": "top",
+    "desc": "氣泡消退後，桌面還留著一圈水",
+    "temp": 59,
+    "moist": 80,
+    "texture": "氣泡",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 95,
+    "name": "薄荷茶",
+    "group": "飲品",
+    "kind": "食物飲品",
+    "note": "top",
+    "desc": "清涼、苦、讓思緒突然打開",
+    "temp": 31,
+    "moist": 48,
+    "texture": "清脆",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 96,
+    "name": "布丁",
+    "group": "甜食",
+    "kind": "食物飲品",
+    "note": "heart",
+    "desc": "顫動的黃色，甜但不吵",
+    "temp": 66,
+    "moist": 73,
+    "texture": "凝固",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 97,
+    "name": "巧克力",
+    "group": "甜食",
+    "kind": "食物飲品",
+    "note": "base",
+    "desc": "融化、深色、貼近舌根的安全感",
+    "temp": 70,
+    "moist": 54,
+    "texture": "融化",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 98,
+    "name": "肉桂捲",
+    "group": "甜食",
+    "kind": "食物飲品",
+    "note": "heart",
+    "desc": "熱、甜、捲起來的午後",
+    "temp": 78,
+    "moist": 52,
+    "texture": "糖霜",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 99,
+    "name": "檸檬蛋糕",
+    "group": "甜食",
+    "kind": "甜食",
+    "note": "top",
+    "desc": "酸、糖霜、剛切開的亮黃色",
+    "temp": 69,
+    "moist": 49,
+    "texture": "蓬鬆",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 100,
+    "name": "草莓果醬",
+    "group": "甜食",
+    "kind": "甜食",
+    "note": "heart",
+    "desc": "熟透的紅、黏稠與一點童年",
+    "temp": 76,
+    "moist": 66,
+    "texture": "黏稠",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 101,
+    "name": "外婆家的湯",
+    "group": "記憶",
+    "kind": "記憶食物",
+    "note": "base",
+    "desc": "家的蒸氣，和一個不必解釋的晚上",
+    "temp": 61,
+    "moist": 76,
+    "texture": "陶碗",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 102,
+    "name": "深夜便利商店",
+    "group": "記憶",
+    "kind": "記憶食物",
+    "note": "top",
+    "desc": "冷氣、塑膠包裝與不想回家的亮光",
+    "temp": 49,
+    "moist": 42,
+    "texture": "塑膠膜",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 103,
+    "name": "生日蛋糕",
+    "group": "記憶",
+    "kind": "記憶食物",
+    "note": "heart",
+    "desc": "奶油、蠟燭煙，和被大家同時看著的幾秒鐘",
+    "temp": 76,
+    "moist": 48,
+    "texture": "奶油泡沫",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 104,
+    "name": "某個人煮的麵",
+    "group": "記憶",
+    "kind": "記憶食物",
+    "note": "heart",
+    "desc": "熱湯表面浮著一點油光，像被照顧過",
+    "temp": 65,
+    "moist": 70,
+    "texture": "溫潤",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 105,
+    "name": "泛黃照片",
+    "group": "記憶",
+    "kind": "記憶",
+    "note": "base",
+    "desc": "紙張、灰塵、和一點仍然存在的陽光",
+    "temp": 35,
+    "moist": 29,
+    "texture": "粉塵",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 106,
+    "name": "放學後的走廊",
+    "group": "記憶",
+    "kind": "記憶",
+    "note": "top",
+    "desc": "蠟地板、午後光線與鞋底回音",
+    "temp": 48,
+    "moist": 34,
+    "texture": "光滑",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 107,
+    "name": "醫院走廊",
+    "group": "記憶",
+    "kind": "記憶",
+    "note": "top",
+    "desc": "消毒水、白光與被壓低的聲音",
+    "temp": 20,
+    "moist": 73,
+    "texture": "冷硬",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 108,
+    "name": "搬家紙箱",
+    "group": "記憶",
+    "kind": "記憶",
+    "note": "heart",
+    "desc": "紙板、膠帶、打開新生活前的灰塵",
+    "temp": 42,
+    "moist": 30,
+    "texture": "粗糙",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 109,
+    "name": "夜市小吃",
+    "group": "記憶",
+    "kind": "記憶食物",
+    "note": "heart",
+    "desc": "油煙、紙袋、熱鬧後的衣服味道",
+    "temp": 74,
+    "moist": 82,
+    "texture": "油亮",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 110,
+    "name": "學校的保久乳",
+    "group": "記憶",
+    "kind": "記憶食物",
+    "note": "heart",
+    "desc": "紙盒、乳白、午休前的安靜",
+    "temp": 48,
+    "moist": 75,
+    "texture": "紙盒",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 111,
+    "name": "舊衣服",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "base",
+    "desc": "洗過很多次的布料，還有某個人的輪廓",
+    "temp": 43,
+    "moist": 59,
+    "texture": "棉布",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 112,
+    "name": "書頁",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "heart",
+    "desc": "乾燥紙張、灰塵與被摺過的角落",
+    "temp": 28,
+    "moist": 23,
+    "texture": "紙質",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 113,
+    "name": "鐵櫃",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "base",
+    "desc": "冷金屬、封閉空氣與多年未打開的門",
+    "temp": 23,
+    "moist": 31,
+    "texture": "金屬",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 114,
+    "name": "塑膠袋",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "top",
+    "desc": "摩擦聲、透明、輕得像不值得保存",
+    "temp": 36,
+    "moist": 32,
+    "texture": "薄膜",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 115,
+    "name": "廚房水槽",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "top",
+    "desc": "水痕、金屬、洗完東西後的空白",
+    "temp": 34,
+    "moist": 78,
+    "texture": "濕冷",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 116,
+    "name": "鎖住的抽屜",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "base",
+    "desc": "木頭、鑰匙與沒有被說出的內容",
+    "temp": 39,
+    "moist": 35,
+    "texture": "封閉",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 117,
+    "name": "沒有人坐的椅子",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "base",
+    "desc": "空位、木頭與剛離開的體溫",
+    "temp": 30,
+    "moist": 43,
+    "texture": "乾木",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 118,
+    "name": "窗簾",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "heart",
+    "desc": "灰塵在光裡慢慢移動",
+    "temp": 39,
+    "moist": 32,
+    "texture": "纖維",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 119,
+    "name": "鉛筆木屑",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "top",
+    "desc": "乾燥雪松、橡皮擦與剛寫完的一行字",
+    "temp": 36,
+    "moist": 22,
+    "texture": "木屑",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 120,
+    "name": "曬好的衣服",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "heart",
+    "desc": "陽光、棉布、衣架上輕輕晃動",
+    "temp": 57,
+    "moist": 46,
+    "texture": "棉布",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 121,
+    "name": "肥皂",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "top",
+    "desc": "白色泡沫、乾淨與剛洗掉的疲憊",
+    "temp": 39,
+    "moist": 69,
+    "texture": "滑溜",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 122,
+    "name": "未寄出的信",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "base",
+    "desc": "紙張、墨水與折痕裡的熱度",
+    "temp": 35,
+    "moist": 34,
+    "texture": "紙質",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 123,
+    "name": "一把鑰匙",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "top",
+    "desc": "金屬、口袋與打開某件事之前的停頓",
+    "temp": 29,
+    "moist": 30,
+    "texture": "冷硬",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 124,
+    "name": "廚房抹布",
+    "group": "物件",
+    "kind": "生活物件",
+    "note": "heart",
+    "desc": "水、洗潔精與反覆做過的家事",
+    "temp": 41,
+    "moist": 88,
+    "texture": "濕布",
+    "spread": "close",
+    "duration": "medium"
+  },
+  {
+    "id": 125,
+    "name": "清晨",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "top",
+    "desc": "淡藍、剛醒來、還沒有做決定",
+    "temp": 33,
+    "moist": 40,
+    "texture": "薄霧",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 126,
+    "name": "黃昏",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "heart",
+    "desc": "溫熱橘色與一天正在收尾的安靜",
+    "temp": 58,
+    "moist": 41,
+    "texture": "天鵝絨",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 127,
+    "name": "午夜",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "base",
+    "desc": "深藍、遠處的冰箱聲與沒有睡著的房間",
+    "temp": 22,
+    "moist": 34,
+    "texture": "冷空氣",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 128,
+    "name": "颱風前",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "top",
+    "desc": "氣壓下降，樹葉翻面，空氣在等待",
+    "temp": 47,
+    "moist": 82,
+    "texture": "壓力",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 129,
+    "name": "月光",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "top",
+    "desc": "銀白、清冷、貼在地板上的形狀",
+    "temp": 19,
+    "moist": 28,
+    "texture": "光",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 130,
+    "name": "三年前的今天",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "base",
+    "desc": "褪色的照片與仍然記得的溫度",
+    "temp": 41,
+    "moist": 45,
+    "texture": "紙張",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 131,
+    "name": "夏夜",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "heart",
+    "desc": "熱皮膚、蟲鳴與遠處的甜",
+    "temp": 81,
+    "moist": 74,
+    "texture": "濃稠",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 132,
+    "name": "冬日陽光",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "top",
+    "desc": "冷空氣裡唯一溫暖的金色",
+    "temp": 46,
+    "moist": 24,
+    "texture": "乾暖",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 133,
+    "name": "日落前一小時",
+    "group": "時間",
+    "kind": "自然時間",
+    "note": "heart",
+    "desc": "橘金、長影子與捨不得結束",
+    "temp": 69,
+    "moist": 42,
+    "texture": "天鵝絨",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 134,
+    "name": "潮濕的土地",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "base",
+    "desc": "深綠、泥土、雨水沉進根裡",
+    "temp": 45,
+    "moist": 91,
+    "texture": "泥濘",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 135,
+    "name": "海邊的風",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "top",
+    "desc": "鹽、日光與不必回頭的開闊",
+    "temp": 43,
+    "moist": 79,
+    "texture": "風",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 136,
+    "name": "第一場雪",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "heart",
+    "desc": "安靜、白色、世界突然被降低音量",
+    "temp": 20,
+    "moist": 61,
+    "texture": "蓬鬆",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 137,
+    "name": "霧",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "top",
+    "desc": "白、濕、把遠處藏起來的柔軟",
+    "temp": 24,
+    "moist": 94,
+    "texture": "朦朧",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 138,
+    "name": "雷聲",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "base",
+    "desc": "低頻、壓迫、雨還沒落下的金屬感",
+    "temp": 58,
+    "moist": 79,
+    "texture": "震動",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 139,
+    "name": "雨後柏油",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "heart",
+    "desc": "礦物、熱氣與剛被沖洗的街道",
+    "temp": 45,
+    "moist": 87,
+    "texture": "石材",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 140,
+    "name": "春天的風",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "top",
+    "desc": "嫩綠、花粉與剛開始的輕快",
+    "temp": 48,
+    "moist": 57,
+    "texture": "纖維",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 141,
+    "name": "退潮",
+    "group": "自然",
+    "kind": "自然時間",
+    "note": "base",
+    "desc": "鹽、濕沙與海水離開後的空白",
+    "temp": 26,
+    "moist": 90,
+    "texture": "顆粒",
+    "spread": "wide",
+    "duration": "long"
+  },
+  {
+    "id": 142,
+    "name": "等一個人",
+    "group": "關係",
+    "kind": "人際關係",
+    "note": "heart",
+    "desc": "空椅子、微溫茶水與持續等待",
+    "temp": 45,
+    "moist": 63,
+    "texture": "纖維",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 143,
+    "name": "告別",
+    "group": "關係",
+    "kind": "人際關係",
+    "note": "base",
+    "desc": "紙張被折起來，最後留下一點風",
+    "temp": 29,
+    "moist": 40,
+    "texture": "薄紙",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 144,
+    "name": "第一次見面",
+    "group": "關係",
+    "kind": "人際關係",
+    "note": "top",
+    "desc": "柑橘、緊張的手心與還沒說出的名字",
+    "temp": 72,
+    "moist": 57,
+    "texture": "氣泡",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 145,
+    "name": "沒有回覆的訊息",
+    "group": "關係",
+    "kind": "人際關係",
+    "note": "top",
+    "desc": "冷光、金屬、時間停在螢幕上",
+    "temp": 34,
+    "moist": 39,
+    "texture": "玻璃",
+    "spread": "wide",
+    "duration": "medium"
+  },
+  {
+    "id": 146,    "name": "一起沉默",
+    "group": "關係",
+    "kind": "人際關係",
+    "note": "heart",
+    "desc": "溫熱木頭、兩只杯子與沒有尷尬的空白",
+    "temp": 51,
+    "moist": 55,
+    "texture": "陶土",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 147,
+    "name": "公車座椅",
+    "group": "空間",
+    "kind": "生活物件",
+    "note": "base",
+    "desc": "布料、灰塵與人群經過的溫度",
+    "temp": 43,
+    "moist": 44,
+    "texture": "粗纖維",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 148,
+    "name": "電梯",
+    "group": "空間",
+    "kind": "生活物件",
+    "note": "top",
+    "desc": "金屬、短暫靠近與樓層變換",
+    "temp": 31,
+    "moist": 37,
+    "texture": "金屬",
+    "spread": "wide",
+    "duration": "short"
+  },
+  {
+    "id": 149,
+    "name": "沒有開燈的房間",
+    "group": "空間",
+    "kind": "生活物件",
+    "note": "base",
+    "desc": "棉被、木頭、黑暗裡還醒著的身體",
+    "temp": 21,
+    "moist": 54,
+    "texture": "柔暗",
+    "spread": "close",
+    "duration": "long"
+  },
+  {
+    "id": 150,
+    "name": "廚房的燈",
+    "group": "空間",
+    "kind": "生活物件",
+    "note": "heart",
+    "desc": "黃光、熱湯與晚一點才回家的溫度",
+    "temp": 67,
+    "moist": 63,
+    "texture": "溫暖",
+    "spread": "close",
+    "duration": "long"
+  }
+];
+
+</script>
+<script>
+(()=>{
+'use strict';
+const $=s=>document.querySelector(s);const $$=s=>Array.from(document.querySelectorAll(s));
+const MATERIALS=window.SCENT_MATERIALS||[];
+const NOTE_NAMES={top:'前調',heart:'中調',base:'後調',all:'混合整瓶'};
+const NOTE_EN={top:'TOP',heart:'HEART',base:'BASE'};
+const FILTERS=['全部','真實香材','情緒感受','複雜情緒','低落情緒','心理狀態','人際關係','身體感受','食物飲品','食物','甜食','記憶食物','記憶','生活物件','空間','自然時間','自然'];
+const VESSELS=[{id:'glass',name:'透明玻璃瓶'},{id:'plastic',name:'塑膠瓶'},{id:'bucket',name:'塑膠水桶'},{id:'bowl',name:'白色的碗'},{id:'mug',name:'馬克杯'},{id:'tea',name:'茶杯'},{id:'baby',name:'奶瓶'},{id:'cabinet',name:'鐵櫃'},{id:'tin',name:'餅乾鐵盒'},{id:'lunch',name:'便當盒'},{id:'pot',name:'花盆'},{id:'wardrobe',name:'衣櫃'}];
+const STORAGE='todayScentV1.saved',DRAFT='todayScentV1.draft';
+let state={selected:[],vessels:[{id:'glass',note:'all'}],stage:'mix',filter:'全部',query:'',generated:null};let toastTimer, serial=0, svgSerial=0, introTimer;
+function safe(s){return String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+function readStore(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}}
+function writeStore(key,val){try{localStorage.setItem(key,JSON.stringify(val));return true}catch{return false}}
+function chosen(){return state.selected.map(id=>MATERIALS[id]).filter(Boolean)}
+function hash(t){let n=2166136261;for(const c of String(t)){n=Math.imul(n^c.charCodeAt(0),16777619)}return n>>>0}
+function clamp(x,a,b){return Math.min(b,Math.max(a,x))}
+function avg(arr,key){return arr.length?arr.reduce((a,b)=>a+b[key],0)/arr.length:0}
+function randChoice(a,seed){return a[seed%a.length]}
+function hslToHex(h,s,l){s/=100;l/=100;const k=n=>(n+h/30)%12;const a=s*Math.min(l,1-l);const f=n=>l-a*Math.max(-1,Math.min(k(n)-3,9-k(n),1));return '#'+[f(0),f(8),f(4)].map(x=>Math.round(x*255).toString(16).padStart(2,'0')).join('')}
+function mixProfile(arr){if(!arr.length)return{hex:'#b88480',light:'#e6b4a4',glow:'rgba(191,124,96,.24)',strength:0,temp:0,moist:0,diffusion:0,lasting:0,texture:'尚未選擇'};
+ const t=avg(arr,'temp'),m=avg(arr,'moist'),n=arr.length,wide=arr.filter(x=>x.spread==='wide').length,lasting=arr.reduce((s,x)=>s+({short:.28,medium:.62,long:1}[x.duration]||.6),0)/n;
+ const hue= (t<37?210+(m>65?7:0):t>66?18+(m>55?342:0):m>66?171:345)%360;
+ const colorH= Math.round((hue+(hash(arr.map(x=>x.name).join(''))%19-9)+360)%360);
+ return {hex:hslToHex(colorH,clamp(24+n*2,28,52),clamp(60-m/9,43,64)),light:hslToHex(colorH,53,78),glow:`hsla(${colorH},55%,57%,.29)`,strength:clamp(Math.round(30+n*5+lasting*17),0,96),temp:Math.round(t),moist:Math.round(m),diffusion:Math.round(25+wide/n*64),lasting:Math.round(25+lasting*67),texture:[...new Set(arr.map(x=>x.texture))].slice(0,3).join('・')};}
+function groupFilter(item,f){if(f==='全部')return true;if(f==='真實香材')return item.kind===f;if(f==='情緒感受')return ['情緒感受','複雜情緒','低落情緒','心理狀態'].includes(item.kind);if(f==='身體感受')return ['身體感受','身體狀態'].includes(item.kind);if(f==='食物飲品')return ['食物飲品','食物','甜食','記憶食物'].includes(item.kind);if(f==='生活物件')return item.kind==='生活物件'||item.group==='空間';if(f==='自然時間')return item.kind==='自然時間';if(f==='自然')return item.group==='自然';if(f==='空間')return item.group==='空間';return item.kind===f;}
+function showToast(s){const el=$('#toast');el.textContent=s;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),2600)}
+function persistDraft(){writeStore(DRAFT,{selected:state.selected,vessels:state.vessels})}
+function setStage(stage){if(stage==='vessels'&&!state.selected.length){showToast('先加入至少一項素材，再選擇容器。');return}if(stage==='result'&&!state.generated){showToast('請先選擇容器並生成香水。');return}state.stage=stage;$('#mixStage').hidden=stage!=='mix';$('#vesselsStage').hidden=stage!=='vessels';$('#resultStage').hidden=stage!=='result';$$('.step').forEach((el,i)=>{const st=['mix','vessels','result'][i];el.classList.toggle('active',st===stage);el.setAttribute('aria-current',st===stage?'step':'false')});if(stage==='vessels'){renderVessels();$('#vesselsStage').scrollTop=0}if(stage==='result'){$('#resultStage').scrollTop=0;renderResult()}if(stage==='mix'){$('#ingredientScroll').scrollTop=Math.max(0,$('#ingredientScroll').scrollTop)} }
+function renderFilters(){$('#filters').innerHTML=FILTERS.map(x=>`<button type="button" class="filter ${state.filter===x?'active':''}" data-filter="${safe(x)}" aria-pressed="${state.filter===x}">${safe(x)}</button>`).join('')}
+function renderLibrary(){const q=state.query.trim().toLocaleLowerCase();const filtered=MATERIALS.filter(x=>groupFilter(x,state.filter)&&(!q||[x.name,x.desc,x.group,x.kind,x.texture].some(p=>p.toLocaleLowerCase().includes(q))));$('#resultCount').textContent=`${state.filter} · ${filtered.length} 項素材`;
+ $('#ingredientGrid').innerHTML=filtered.length?filtered.map(x=>{const on=state.selected.includes(x.id);return `<button type="button" data-ingredient="${x.id}" class="ingredient-card ${on?'active':''}" aria-pressed="${on}" title="${safe(x.desc)}"><div class="ingredient-card-head"><span class="ingredient-type">${safe(x.kind==='真實香材'?x.group+' · 真實香材':x.kind+' · 轉譯')}</span><span class="ingredient-action">${on?'✓':'+'}</span></div><span class="ingredient-name">${safe(x.name)}</span><span class="ingredient-desc">${safe(x.desc)}</span><span class="ingredient-footer"><span>${safe(NOTE_NAMES[x.note])} / ${safe(NOTE_EN[x.note])}</span><span>${on?'已加入':'加入配方'}</span></span></button>`}).join(''):'<div class="no-results">沒有找到符合的素材。<br>可以換個關鍵字再試試。</div>'}
+function renderPreview(){const arr=chosen(),profile=mixProfile(arr),n=arr.length;document.documentElement.style.setProperty('--liquid',profile.hex);document.documentElement.style.setProperty('--liquid-light',profile.light);document.documentElement.style.setProperty('--glow',profile.glow);$('#bottleLiquid').style.height=`${Math.min(91,8+n*8)}%`;$('#sceneSwatch').style.background=profile.hex;$('#selectedCount').textContent=String(n).padStart(2,'0');$('#mobileCount').textContent=n;$('#formulaCount').textContent=`${n} / 151`;$('#chosenTotal').textContent=n;$('#sceneMood').textContent=n?`${arr.at(-1).name} · ${arr.at(-1).texture}`:'等待第一種氣味';$('#mobileMood').textContent=n?arr.at(-1).name:'等待第一種氣味';$('#bottleLabel').textContent=n?arr[0].name+(n>1?`等 ${n} 種原料`:''):'未命名的今天';
+ $('#noteStrip').innerHTML=['top','heart','base'].map(note=>{const a=arr.filter(x=>x.note===note);return `<div class="note-mini"><span>${NOTE_NAMES[note]} / ${NOTE_EN[note]}</span><strong>${a.length?safe(a.map(x=>x.name).join('、')):'等待加入'}</strong></div>`}).join('');
+ $('#chosenList').innerHTML=n?arr.map(x=>`<span class="chosen-chip">${safe(x.name)} <button type="button" data-remove="${x.id}" aria-label="移除${safe(x.name)}">×</button></span>`).join(''):'<span class="empty-chosen">還沒有添加原料。從左邊選一個試試。</span>';
+ $('#bubbles').innerHTML=n?Array.from({length:Math.min(n*2,18)},(_,i)=>`<span class="bubble" style="left:${7+(hash(i+arr[i%n].name)%85)}%;animation-delay:-${(i*.41).toFixed(1)}s;animation-duration:${2+i%4}s"></span>`).join(''):'';
+}
+function particleEffect(item){const holder=$('#sceneDust');let color=item.temp>65?'#dba16f':item.moist>75?'#87b0b7':item.kind.includes('低落')?'#9b97ad':item.group==='花香'?'#c68b9c':'#c5a37a';for(let i=0;i<15;i++){const e=document.createElement('span'),a=(i/15)*Math.PI*2,dist=70+(hash(item.name+i)%60);e.className='particle';e.style.background=color;e.style.setProperty('--dx',`${Math.cos(a)*dist}px`);e.style.setProperty('--dy',`${Math.sin(a)*dist*.64}px`);e.style.animationDelay=`${i*16}ms`;holder.append(e);setTimeout(()=>e.remove(),1550)}}
+function toggleIngredient(id){const i=state.selected.indexOf(id);if(i>=0)state.selected.splice(i,1);else{state.selected.push(id);particleEffect(MATERIALS[id])}state.generated=null;persistDraft();renderLibrary();renderPreview()}
+function clearAll(){if(!state.selected.length)return;state.selected=[];state.generated=null;persistDraft();renderLibrary();renderPreview();showToast('已清空配方，可以重新開始。')}
+// Distinct vessel illustrations are original local SVG shapes; no outside images or font requests.
+function vesselSVG(id,color){const uid=`v${++svgSerial}`,p=color||'#c49385',g=`url(#${uid}glass)`,metal=`url(#${uid}metal)`;let shape='';const line='#7b6662';const outline=`stroke="${line}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"`;switch(id){
+case 'glass':shape=`<rect x="45" y="8" width="30" height="17" rx="3" fill="${metal}" ${outline}/><rect x="49" y="25" width="22" height="16" fill="#d8d6cd" ${outline}/><rect x="22" y="40" width="76" height="86" rx="14" fill="${g}" ${outline}/><path d="M26 91 Q60 84 94 91 V110 Q94 122 81 122H39Q26 122 26 110Z" fill="${p}" opacity=".72"/><rect x="37" y="61" width="46" height="41" fill="#fff8e9c9" stroke="#d5c8b9"/><path d="M33 50 Q27 68 31 104" stroke="#fff" stroke-width="5" opacity=".7" fill="none"/>`;break;
+case 'plastic':shape=`<rect x="48" y="6" width="24" height="16" rx="3" fill="#d9ebee" ${outline}/><path d="M45 23H75V36Q93 43 91 63L89 116Q89 126 76 126H44Q31 126 31 115L29 63Q27 43 45 36Z" fill="${g}" ${outline}/><path d="M33 83H87L85 113Q85 122 76 122H44Q35 122 35 113Z" fill="${p}" opacity=".58"/><rect x="37" y="60" width="46" height="30" rx="3" fill="#fff8e4cc"/><path d="M43 31H77M41 103H79" stroke="#a6ada9" stroke-width="2"/>`;break;
+case 'bucket':shape=`<path d="M20 39Q60 22 100 39L89 120Q60 133 31 120Z" fill="${g}" ${outline}/><ellipse cx="60" cy="39" rx="40" ry="10" fill="#fff8ef" ${outline}/><path d="M27 44Q24 7 60 7Q96 7 93 44" fill="none" stroke="#99857f" stroke-width="5"/><path d="M31 75L89 75L84 117Q60 125 36 117Z" fill="${p}" opacity=".47"/>`;break;
+case 'bowl':shape=`<ellipse cx="60" cy="42" rx="53" ry="15" fill="#fffdfa" stroke="#b8aaa2" stroke-width="2"/><path d="M7 43Q13 111 58 119Q106 116 113 43Q91 61 60 59Q28 60 7 43Z" fill="#f8f6f0" ${outline}/><path d="M11 44Q60 70 109 44" fill="none" stroke="#d7cec2" stroke-width="3"/><ellipse cx="60" cy="43" rx="43" ry="10" fill="${p}" opacity=".43"/><path d="M38 120H82" stroke="#ac9c8e" stroke-width="5"/>`;break;
+case 'mug':shape=`<path d="M24 30H88L83 117Q60 126 29 117Z" fill="${g}" ${outline}/><path d="M87 48Q122 43 112 83Q109 98 85 94" fill="none" stroke="#967975" stroke-width="10"/><path d="M87 49Q113 48 106 82Q103 88 88 86" fill="none" stroke="#f8f0e6" stroke-width="5"/><ellipse cx="56" cy="30" rx="32" ry="8" fill="#fff5e8" stroke="#a38a82" stroke-width="2"/><ellipse cx="56" cy="30" rx="26" ry="5" fill="${p}" opacity=".53"/><path d="M32 44Q25 78 35 108" stroke="#fff" opacity=".7" stroke-width="4" fill="none"/>`;break;
+case 'tea':shape=`<path d="M25 51H87Q88 92 77 105Q56 117 35 105Q25 88 25 51Z" fill="#f8f7ef" ${outline}/><ellipse cx="56" cy="52" rx="31" ry="9" fill="#fff" ${outline}/><ellipse cx="56" cy="52" rx="25" ry="5" fill="${p}" opacity=".65"/><path d="M85 60Q113 51 108 79Q103 94 84 90" stroke="#8e7c79" stroke-width="8" fill="none"/><path d="M88 63Q107 59 103 78Q98 85 87 84" stroke="#f8f7ef" stroke-width="4" fill="none"/><path d="M26 113Q59 127 89 113" fill="none" stroke="#b1a39a" stroke-width="4"/>`;break;
+case 'baby':shape=`<path d="M50 8Q60-2 70 8L71 24H49Z" fill="#e9d5ad" ${outline}/><rect x="43" y="24" width="34" height="13" rx="4" fill="#eee7cc" ${outline}/><path d="M40 38Q27 52 30 67V108Q30 126 46 126H74Q90 126 90 108V67Q93 52 80 38Z" fill="${g}" ${outline}/><path d="M35 74H85V106Q85 121 73 121H47Q35 121 35 106Z" fill="${p}" opacity=".54"/><path d="M39 60H47M39 71H47M39 82H47M39 93H47" stroke="#938a81" stroke-width="2"/>`;break;
+case 'cabinet':shape=`<rect x="24" y="18" width="72" height="107" rx="3" fill="${metal}" ${outline}/><path d="M60 20V122M28 44H92" stroke="#927d74" stroke-width="3"/><rect x="28" y="24" width="28" height="16" rx="2" fill="#f0e5d7" opacity=".42"/><rect x="64" y="24" width="28" height="16" rx="2" fill="#f0e5d7" opacity=".42"/><rect x="53" y="66" width="3" height="21" rx="1" fill="#e8d3ba"/><rect x="65" y="66" width="3" height="21" rx="1" fill="#e8d3ba"/><path d="M32 125V131M88 125V131" stroke="#786563" stroke-width="4"/>`;break;
+case 'tin':shape=`<rect x="15" y="48" width="90" height="65" rx="12" fill="${metal}" ${outline}/><rect x="10" y="37" width="100" height="24" rx="10" fill="#b6a2a0" ${outline}/><rect x="19" y="60" width="82" height="46" rx="8" fill="${p}" opacity=".55"/><circle cx="60" cy="83" r="15" fill="#fff4debd"/><path d="M48 83Q60 68 72 83Q60 98 48 83" fill="none" stroke="#a6857f" stroke-width="2"/>`;break;
+case 'lunch':shape=`<rect x="14" y="43" width="92" height="69" rx="13" fill="${g}" ${outline}/><rect x="11" y="35" width="98" height="22" rx="9" fill="#ece0ca" ${outline}/><rect x="23" y="65" width="74" height="38" rx="5" fill="${p}" opacity=".56"/><path d="M62 65V103" stroke="#fff7ec" stroke-width="3"/><path d="M24 30Q60 5 96 30" stroke="#8e7a73" stroke-width="6" fill="none"/>`;break;
+case 'pot':shape=`<path d="M28 57H92L81 120H39Z" fill="#c08f72" ${outline}/><path d="M22 50H98V64H22Z" fill="#cfa182" ${outline}/><path d="M59 57V20M60 40Q31 16 26 25Q33 48 60 49M60 33Q94 5 95 22Q89 42 60 47M58 24Q45 7 57 2Q74 9 64 28" fill="#73947c" stroke="#51735a" stroke-width="2" stroke-linejoin="round"/><path d="M60 50Q52 16 59 8" stroke="#546f5b" stroke-width="2" fill="none"/><path d="M35 84H85" stroke="#a46f59" stroke-width="2"/>`;break;
+case 'wardrobe':shape=`<rect x="20" y="12" width="80" height="111" rx="3" fill="#a17a5b" ${outline}/><rect x="26" y="18" width="32" height="98" fill="#bd9672" stroke="#795c4a" stroke-width="2"/><rect x="62" y="18" width="32" height="98" fill="#b1886a" stroke="#795c4a" stroke-width="2"/><path d="M31 24H53V108H31ZM67 24H89V108H67Z" fill="none" stroke="#d6b497" stroke-width="1.5"/><circle cx="54" cy="70" r="3" fill="#e8d4b6"/><circle cx="66" cy="70" r="3" fill="#e8d4b6"/><path d="M30 124V131M90 124V131" stroke="#5d493f" stroke-width="5"/>`;break;
+}
+return `<svg viewBox="0 0 120 140" role="img" aria-label="${safe(VESSELS.find(v=>v.id===id)?.name||id)}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="${uid}glass" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#fffefa" stop-opacity=".89"/><stop offset=".44" stop-color="#e3dfd7" stop-opacity=".56"/><stop offset="1" stop-color="${p}" stop-opacity=".72"/></linearGradient><linearGradient id="${uid}metal" x1="0" x2="1"><stop stop-color="#807477"/><stop offset=".35" stop-color="#dfd4c7"/><stop offset="1" stop-color="#8c7a77"/></linearGradient></defs><ellipse cx="60" cy="133" rx="37" ry="5" fill="#9a807a" opacity=".14"/>${shape}</svg>`;}
+function renderVessels(){const prof=mixProfile(chosen());$('#vesselGrid').innerHTML=VESSELS.map(v=>{let ix=state.vessels.findIndex(x=>x.id===v.id);return `<button class="vessel-card ${ix>=0?'active':''}" type="button" data-vessel="${v.id}" aria-pressed="${ix>=0}"><span class="vessel-svg">${vesselSVG(v.id,prof.hex)}</span><span class="vessel-name">${v.name}</span>${ix>=0?`<span class="vessel-num">${ix+1}</span>`:''}</button>`}).join('');
+ $('#pickedVessels').innerHTML=state.vessels.length?state.vessels.map(v=>`<div class="picked-vessel"><div class="picked-vessel-name"><span>${safe(VESSELS.find(x=>x.id===v.id)?.name)}</span><button type="button" data-remove-vessel="${v.id}" aria-label="移除${safe(v.id)}">×</button></div><select data-vessel-note="${v.id}" aria-label="選擇${safe(v.id)}承接的香調">${[['all','混合整瓶'],['top','只裝前調'],['heart','只裝中調'],['base','只裝後調']].map(([id,label])=>`<option value="${id}" ${v.note===id?'selected':''}>${label}</option>`).join('')}</select></div>`).join(''):'<p class="sidebar-empty">還沒有選容器。<br>可以從左邊選擇喜歡的物件。</p>';
+ $('#generateBtn').disabled=!state.vessels.length;}
+function toggleVessel(id){const i=state.vessels.findIndex(v=>v.id===id);if(i>=0)state.vessels.splice(i,1);else state.vessels.push({id,note:'all'});state.generated=null;persistDraft();renderVessels()}
+function genName(arr,shift=0){if(!arr.length)return '未命名的今天';const seed=hash(arr.map(x=>x.name).join('/'))+shift*59;const scene=arr.filter(x=>['自然','時間','記憶','空間','關係'].includes(x.group));const mind=arr.filter(x=>['情緒','心理','身體'].includes(x.group));const first=randChoice(scene.length?scene:arr,seed).name;const second=randChoice(mind.length?mind:arr,seed>>3).name;const names=[`${first}的回聲`,`${first}之後`, `留給${second}的房間`,`${first}，還有${second}`,`把${first}留在今天`,`還沒散去的${first}`,`${second}的另一面`, `${first}的餘溫`];return randChoice(names,seed>>2)}
+function excerpt(a,num){return a.slice(0,num).map(x=>x.name).join('、')}
+function compoundDescription(arr){const by=n=>arr.filter(x=>x.note===n);const pieces=[];for(const note of ['top','heart','base']){let a=by(note);if(a.length)pieces.push(`${NOTE_NAMES[note]}由${excerpt(a,Math.min(4,a.length))}構成，${a.slice(0,2).map(x=>`${x.name}帶來「${x.desc}」`).join('；')}。`)}return pieces.join('')}
+function noteText(arr,note){const a=arr.filter(x=>x.note===note);if(!a.length)return '這一層目前沒有加入素材，保留了一段沒有填滿的空白。';const verbs={top:'一開始，',heart:'當氣味漸漸靠近，',base:'最後慢慢留下的，是'};return verbs[note]+a.slice(0,4).map((x,i)=>`${i===0?x.name:'而'+x.name}——${x.desc}`).join('；')+(a.length>4?`；另外還有${a.slice(4).map(x=>x.name).join('、')}`:'')+'。'}
+function makeNarrative(arr,profile){const seed=hash(arr.map(x=>x.name).join('-')),by=n=>arr.filter(x=>x.note===n);const top=by('top'),heart=by('heart'),base=by('base');const a=top[0]||arr[0],b=heart[0]||arr[Math.min(arr.length-1,1)],c=base[0]||arr[arr.length-1];let poetic=[`如果${a.name}是一個開頭，它大概帶著${a.desc}。接著，${b.name}把${b.desc}放在中間。等到${c.name}留下來，才發現今天仍有一些東西，沒有急著離開。`,`有人把${a.name}留在窗邊，空氣裡有${a.desc}。${b.name}走得慢一些，帶著${b.desc}。最後的${c.name}不說結論，只把${c.desc}留在原處。`,`這瓶氣味從${a.name}開始：${a.desc}。${b.name}在途中出現，像一段突然想起的日常。${c.name}待得最久；即使你把房間的燈關掉，它也還有自己的輪廓。`,`起初只是${a.name}，有一點${a.desc}。再往裡走，遇見${b.name}和${b.desc}。如果今天一定要有一個收尾，就讓${c.name}帶著${c.desc}，慢慢停下。`][seed%4];
+ const prof=compoundDescription(arr);const real=arr.filter(x=>x.kind==='真實香材');const imag=arr.filter(x=>x.kind!=='真實香材');const expert=`香調結構：${top.length?'明亮起始':'安靜起始'}／${heart.length?'延展中調':'留白中段'}／${base.length?'沉穩尾韻':'輕盈尾韻'}。${prof}${real.length?`其中${excerpt(real,4)}屬於真實香材。`:''}${imag.length?`${excerpt(imag,4)}則是以感官敘述轉譯成的想像氣味。`:''}`;
+ const t=profile.temp>64?'偏溫熱':profile.temp<37?'偏清冷':'介於冷暖之間',wet=profile.moist>68?'帶著明顯的水氣':profile.moist<36?'乾爽、輕薄':'微微濕潤',weight=profile.lasting>68?'感覺停留得比較久':'像短暫經過又慢慢散開';const body=`若把這份虛擬配方想像成一種觸感，它是${t}、${wet}的；${profile.texture}在皮膚旁邊慢慢交疊，${weight}。這段描述是一種感官想像，並不預測身體或情緒會產生什麼變化。`;
+ return {poetic,expert,body,lead:`${arr.length} 種素材，${top.length} 段開場、${heart.length} 段途中、${base.length} 段餘韻。今天的味道，暫時長成這個樣子。`};}
+function createResult(){const arr=chosen(),profile=mixProfile(arr);const narr=makeNarrative(arr,profile);return{version:1,ids:[...state.selected],vessels:state.vessels.map(x=>({...x})),profile,name:genName(arr),subtitle:'一份把今天留下來的虛擬配方',serial:`TD—${String(Date.now()%1000000).padStart(6,'0')}`,createdAt:new Date().toISOString(),...narr};}
+function renderResult(){const r=state.generated;if(!r)return;const arr=chosen();$('#resultSerial').textContent=`FORMULA Nº ${r.serial}`;$('#perfumeName').value=r.name;$('#perfumeSubtitle').value=r.subtitle;$('#resultLead').textContent=r.lead;$('#resultColor').style.background=r.profile.hex;$('#colorCode').textContent=r.profile.hex.toUpperCase();$('#resultVessels').innerHTML=r.vessels.map(v=>{const a=VESSELS.find(x=>x.id===v.id);return `<div class="result-vessel-item"><div class="result-vessel-art">${vesselSVG(v.id,r.profile.hex)}</div><div class="result-vessel-name">${safe(a?.name)}</div><div class="result-vessel-note">${NOTE_NAMES[v.note]}</div></div>`}).join('');
+ const metrics=[['香氣強度',r.profile.strength,'%'],['溫度',r.profile.temp,' / 100'],['濕度',r.profile.moist,' / 100'],['擴散範圍',r.profile.diffusion,'%'],['持續時間',r.profile.lasting,'%']];$('#metrics').innerHTML=metrics.map(x=>`<div class="metric"><b class="metric-val">${x[1]}${x[2]==='%'?'<small style="font-size:14px">%</small>':''}</b><span class="metric-title">${x[0]}${x[2]===' / 100'?' · 100 分制':''}</span></div>`).join('');
+ $('#notesResult').innerHTML=['top','heart','base'].map((note,i)=>`<article class="note-result"><span>0${i+1} / ${NOTE_EN[note]}</span><h3>${NOTE_NAMES[note]} · ${safe(arr.filter(x=>x.note===note).map(x=>x.name).join('、')||'留白')}</h3><p>${safe(noteText(arr,note))}</p></article>`).join('');$('#expertText').textContent=r.expert;$('#poeticText').textContent=r.poetic;$('#bodyText').textContent=r.body;$('#allMaterialsCount').textContent=arr.length;$('#resultMaterialList').innerHTML=arr.map(x=>`<span>${safe(x.name)} · ${safe(NOTE_NAMES[x.note])} · ${x.kind==='真實香材'?'真實':'轉譯'}</span>`).join('');}
+function generate(){if(!chosen().length){showToast('請先選擇素材。');return}if(!state.vessels.length){showToast('請至少選擇一件容器。');return}const ov=$('#loadingOverlay');ov.hidden=false;setTimeout(()=>{state.generated=createResult();ov.hidden=true;setStage('result')},850)}
+function savedRecipes(){return readStore(STORAGE,[]).filter(x=>Array.isArray(x.ids))}
+function updateSaveCount(){$('#savedCount').textContent=savedRecipes().length}
+function saveRecipe(){if(!state.generated)return;state.generated.name=$('#perfumeName').value.trim()||'未命名的今天';state.generated.subtitle=$('#perfumeSubtitle').value.trim();const saves=savedRecipes();saves.unshift({...state.generated,savedId:Date.now()+Math.floor(Math.random()*5000)});if(writeStore(STORAGE,saves)){updateSaveCount();showToast('已存入「我的作品」，儲存在這個瀏覽器裡。')}else{showToast('瀏覽器無法儲存，請改用「下載香水卡」。')}}
+function loadRecipe(id){const item=savedRecipes().find(x=>x.savedId===id);if(!item)return;state.selected=item.ids.filter(x=>MATERIALS[x]);state.vessels=item.vessels.filter(x=>VESSELS.some(v=>v.id===x.id));state.generated={...item};persistDraft();renderLibrary();renderPreview();$('#savedDialog').close();setStage('result');showToast('已開啟保存的香水。')}
+function deleteRecipe(id){const items=savedRecipes().filter(x=>x.savedId!==id);writeStore(STORAGE,items);renderSaved();updateSaveCount();showToast('已從這個瀏覽器刪除作品。')}
+function renderSaved(){const list=savedRecipes();$('#savedList').innerHTML=list.length?list.map(x=>`<div class="saved-item"><div><h3>${safe(x.name)}</h3><p>${safe(x.subtitle)} · ${x.ids.length} 項原料 · ${safe((x.createdAt||'').slice(0,10))}</p></div><div class="saved-item-actions"><button data-load="${x.savedId}">開啟</button><button data-delete="${x.savedId}">刪除</button></div></div>`).join(''):'<p class="sidebar-empty">尚未儲存香水。調製完成後，就能在這裡找到它。</p>'}
+function canvasCard(){const r=state.generated,arr=chosen();if(!r)return;const c=document.createElement('canvas');c.width=1080;c.height=1500;const ctx=c.getContext('2d');ctx.fillStyle='#f6efe5';ctx.fillRect(0,0,1080,1500);ctx.strokeStyle='#bdac97';ctx.strokeRect(45,45,990,1410);ctx.fillStyle='#70525a';ctx.textAlign='center';ctx.font='20px Georgia, serif';ctx.fillText('THE SCENT OF TODAY',540,118);ctx.font='48px "Noto Serif TC", serif';ctx.fillText('你今天的味道',540,188);ctx.fillStyle=r.profile.hex;ctx.fillRect(475,226,130,9);ctx.fillStyle='#5b3c48';ctx.font='bold 53px "Noto Serif TC", serif';wrapCanvas(ctx,r.name,540,325,895,65,2);ctx.font='25px "Noto Serif TC", serif';ctx.fillStyle='#8e766d';wrapCanvas(ctx,r.subtitle,540,450,850,35,2);
+ const notes=[['前調 / TOP',arr.filter(x=>x.note==='top')],['中調 / HEART',arr.filter(x=>x.note==='heart')],['後調 / BASE',arr.filter(x=>x.note==='base')]];let y=550;notes.forEach(([name,items])=>{ctx.strokeStyle='#d7c7b7';ctx.beginPath();ctx.moveTo(130,y-23);ctx.lineTo(950,y-23);ctx.stroke();ctx.font='21px Georgia';ctx.fillStyle='#9b7f69';ctx.fillText(name,540,y+4);ctx.font='26px "Noto Serif TC", serif';ctx.fillStyle='#5a4541';wrapCanvas(ctx,items.length?items.map(x=>x.name).join('、'):'留白',540,y+43,820,35,2);y+=150});ctx.strokeStyle='#d7c7b7';ctx.beginPath();ctx.moveTo(130,1022);ctx.lineTo(950,1022);ctx.stroke();ctx.font='22px "Noto Serif TC", serif';ctx.fillStyle='#644e49';ctx.fillText('容器 · '+r.vessels.map(v=>VESSELS.find(x=>x.id===v.id)?.name+`（${NOTE_NAMES[v.note]}）`).join('、').slice(0,45),540,1071);ctx.font='20px "Noto Serif TC", serif';ctx.fillStyle='#76695f';wrapCanvas(ctx,r.poetic,540,1150,830,35,5);ctx.font='18px Georgia';ctx.fillText(r.serial+'   •   '+r.profile.hex,540,1412);const name=`你今天的味道-${r.name.replace(/[\\/:*?"<>|]/g,'').slice(0,20)}.png`;c.toBlob(blob=>{if(!blob){showToast('圖片產生失敗，請使用列印功能。');return}const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),15000)},'image/png')}
+function wrapCanvas(ctx,text,x,y,maxWidth,lineH,maxLines){let line='',lines=[];for(const ch of String(text)){if(ctx.measureText(line+ch).width>maxWidth&&line){lines.push(line);line=ch}else line+=ch}if(line)lines.push(line);lines.slice(0,maxLines).forEach((l,i)=>ctx.fillText(i===maxLines-1&&lines.length>maxLines?l.slice(0,-1)+'…':l,x,y+i*lineH))}
+function wire(){
+ $('#filters').addEventListener('click',e=>{let b=e.target.closest('[data-filter]');if(!b)return;state.filter=b.dataset.filter;renderFilters();renderLibrary();$('#ingredientScroll').scrollTop=0});
+ $('#ingredientGrid').addEventListener('click',e=>{const c=e.target.closest('[data-ingredient]');if(c)toggleIngredient(Number(c.dataset.ingredient))});
+ $('#chosenList').addEventListener('click',e=>{const b=e.target.closest('[data-remove]');if(b)toggleIngredient(Number(b.dataset.remove))});
+ $('#search').addEventListener('input',e=>{state.query=e.target.value;$('#clearSearch').hidden=!state.query;renderLibrary();$('#ingredientScroll').scrollTop=0});
+ $('#clearSearch').addEventListener('click',()=>{$('#search').value='';state.query='';$('#clearSearch').hidden=true;renderLibrary()});
+ $('#clearSearch').addEventListener('keydown',e=>{if(e.key==='Enter')$('#clearSearch').click()});
+ $('#clearAll').addEventListener('click',clearAll);
+ $('#toVessels').addEventListener('click',()=>setStage('vessels'));$('#mobileToVessels').addEventListener('click',()=>setStage('vessels'));$('#backToMix').addEventListener('click',()=>setStage('mix'));
+ $$('.step').forEach(b=>b.addEventListener('click',()=>setStage(b.dataset.goto)));$('#homeBrand').addEventListener('click',()=>setStage('mix'));
+ $('#vesselGrid').addEventListener('click',e=>{const b=e.target.closest('[data-vessel]');if(b)toggleVessel(b.dataset.vessel)});
+ $('#pickedVessels').addEventListener('click',e=>{const b=e.target.closest('[data-remove-vessel]');if(b)toggleVessel(b.dataset.removeVessel)});
+ $('#pickedVessels').addEventListener('change',e=>{if(!e.target.matches('[data-vessel-note]'))return;const v=state.vessels.find(v=>v.id===e.target.dataset.vesselNote);if(v){v.note=e.target.value;state.generated=null;persistDraft()}});
+ $('#generateBtn').addEventListener('click',generate);$('#backToVessels').addEventListener('click',()=>setStage('vessels'));
+ $('#perfumeName').addEventListener('input',e=>{if(state.generated)state.generated.name=e.target.value});$('#perfumeSubtitle').addEventListener('input',e=>{if(state.generated)state.generated.subtitle=e.target.value});
+ $('#rerollName').addEventListener('click',()=>{if(!state.generated)return;state.generated.name=genName(chosen(),1+Math.floor(Math.random()*10000));$('#perfumeName').value=state.generated.name;showToast('已換一個名字，仍可自己修改。')});
+ $('#saveRecipe').addEventListener('click',saveRecipe);$('#downloadCard').addEventListener('click',canvasCard);$('#printRecipe').addEventListener('click',()=>window.print());$('#makeAnother').addEventListener('click',()=>{state.selected=[];state.vessels=[{id:'glass',note:'all'}];state.generated=null;persistDraft();state.filter='全部';state.query='';$('#search').value='';renderFilters();renderLibrary();renderPreview();setStage('mix');showToast('新的調製工作台已經準備好了。')});
+ $('#openSaved').addEventListener('click',()=>{renderSaved();$('#savedDialog').showModal()});$('#closeSaved').addEventListener('click',()=>$('#savedDialog').close());$('#savedDialog').addEventListener('click',e=>{if(e.target===$('#savedDialog'))$('#savedDialog').close()});
+ $('#savedList').addEventListener('click',e=>{const load=e.target.closest('[data-load]'),del=e.target.closest('[data-delete]');if(load)loadRecipe(Number(load.dataset.load));if(del)deleteRecipe(Number(del.dataset.delete))});
+ const dismiss=()=>{clearTimeout(introTimer);$('#intro').classList.add('hiding');setTimeout(()=>$('#intro').hidden=true,470)};$('#skipIntro').addEventListener('click',dismiss);introTimer=setTimeout(dismiss,3400);
+}
+function init(){const draft=readStore(DRAFT,null);if(draft&&Array.isArray(draft.selected)&&Array.isArray(draft.vessels)){state.selected=[...new Set(draft.selected)].filter(id=>Number.isInteger(id)&&MATERIALS[id]);state.vessels=draft.vessels.filter(x=>VESSELS.some(v=>v.id===x.id)&&NOTE_NAMES[x.note]).slice(0,12)}renderFilters();renderLibrary();renderPreview();updateSaveCount();wire()}
+init();
+})();
+
+</script>
+</body>
+</html>
